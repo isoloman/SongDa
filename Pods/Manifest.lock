@@ -1,0 +1,113 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - AMap3DMap (6.9.0):
+    - AMapFoundation (~> 1.5)
+  - AMapFoundation (1.5.6)
+  - AMapLocation (2.6.2):
+    - AMapFoundation (~> 1.4)
+  - AMapNavi (6.8.0):
+    - AMap3DMap (~> 6.7)
+    - AMapFoundation (~> 1.5)
+  - AMapSearch (6.9.0):
+    - AMapFoundation (~> 1.4)
+  - Bugly (2.5.0)
+  - CocoaLumberjack (3.5.3):
+    - CocoaLumberjack/Core (= 3.5.3)
+  - CocoaLumberjack/Core (3.5.3)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - JCore (2.0.1)
+  - JPush (3.2.0):
+    - JCore (< 3.0.0, >= 2.0.0)
+  - Masonry (1.1.0)
+  - MJRefresh (3.2.0)
+  - SDWebImage (5.0.5):
+    - SDWebImage/Core (= 5.0.5)
+  - SDWebImage/Core (5.0.5)
+  - SVProgressHUD (2.2.5)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+  - ZLPhotoBrowser (3.0.4):
+    - SDWebImage (~> 5.0.2)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - AMapLocation
+  - AMapNavi
+  - AMapSearch
+  - Bugly
+  - CocoaLumberjack
+  - FMDB (~> 2.6.2)
+  - JPush
+  - Masonry
+  - MJRefresh
+  - SVProgressHUD (from `https://gitee.com/fancy007/SVProgressHUD.git`)
+  - YYKit
+  - ZLPhotoBrowser
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - AMap3DMap
+    - AMapFoundation
+    - AMapLocation
+    - AMapNavi
+    - AMapSearch
+    - Bugly
+    - CocoaLumberjack
+    - FMDB
+    - JCore
+    - JPush
+    - Masonry
+    - MJRefresh
+    - SDWebImage
+    - YYKit
+    - ZLPhotoBrowser
+
+EXTERNAL SOURCES:
+  SVProgressHUD:
+    :git: https://gitee.com/fancy007/SVProgressHUD.git
+
+CHECKOUT OPTIONS:
+  SVProgressHUD:
+    :commit: db329732e66056e74794f4db101aaee12f337728
+    :git: https://gitee.com/fancy007/SVProgressHUD.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AMap3DMap: c80b264f08f179d9b0949b84c65fc1a51dec9d6f
+  AMapFoundation: 20fce2a12cd152e1092afdd04379cdac21932185
+  AMapLocation: 89a7e4eb6040d32ba73c77a4966ecc66e46aa7c3
+  AMapNavi: 4cd0502d2b78ae8f760551c49e81a82934cfd61c
+  AMapSearch: af02822537e55b85a4752e9df5c19e4b9da82031
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
+  CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  JCore: 8425fb3f85f1400f9bc8ccf8121cd5694a790f3b
+  JPush: 8459e7a709ad86f95884fcb49cbd57a6da24744e
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  SDWebImage: f86b0a0713195d1c734335d010697d44af10d165
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+  ZLPhotoBrowser: 74f02c52b369bab0bfd7db225faf4e77fcf4d59a
+
+PODFILE CHECKSUM: 9307122ccf5e08ad50eb4758e801db2efde8933e
+
+COCOAPODS: 1.6.1

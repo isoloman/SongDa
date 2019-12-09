@@ -1,0 +1,1577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6602F9202091C39600AB6313 /* WTMyCaseSignDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6602F91F2091C39600AB6313 /* WTMyCaseSignDetailViewModel.m */; };
+		6602F9232091DB1F00AB6313 /* WTMyCaseSignDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6602F9222091DB1F00AB6313 /* WTMyCaseSignDetailModel.m */; };
+		660FF19B2079A6B600D53444 /* WTCaseDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 660FF19A2079A6B600D53444 /* WTCaseDetailViewModel.m */; };
+		660FF19E2079B19700D53444 /* WTCaseDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 660FF19D2079B19700D53444 /* WTCaseDetailModel.m */; };
+		660FF1A12079BFA200D53444 /* WTCaseTransferViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 660FF1A02079BFA200D53444 /* WTCaseTransferViewModel.m */; };
+		660FF1AF2079E96E00D53444 /* WTCaseTransferCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660FF1AE2079E96E00D53444 /* WTCaseTransferCodeController.m */; };
+		660FF1B22079E99200D53444 /* WTCaseTransferOperateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660FF1B12079E99200D53444 /* WTCaseTransferOperateController.m */; };
+		660FF1B5207A031A00D53444 /* WTCaseTransferCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 660FF1B4207A031A00D53444 /* WTCaseTransferCell.m */; };
+		660FF1B8207A0A7200D53444 /* WTCaseTransferDelivererViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 660FF1B7207A0A7200D53444 /* WTCaseTransferDelivererViewModel.m */; };
+		660FF1BB207A0E3100D53444 /* WTCaseTransferDelivererModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 660FF1BA207A0E3100D53444 /* WTCaseTransferDelivererModel.m */; };
+		6628EC10207AF1A1008DE508 /* WTPlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6628EC0F207AF1A1008DE508 /* WTPlaceholderView.m */; };
+		6628EC13207B12B9008DE508 /* WTCaseCenterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6628EC12207B12B9008DE508 /* WTCaseCenterModel.m */; };
+		6628EC16207B50E1008DE508 /* WTCaseCenterRegionsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6628EC15207B50E1008DE508 /* WTCaseCenterRegionsViewModel.m */; };
+		6628EC19207B58E9008DE508 /* WTCaseRegionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6628EC18207B58E9008DE508 /* WTCaseRegionModel.m */; };
+		66356EA120906ECE00EB761F /* WTCaseCenterMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66356EA020906ECE00EB761F /* WTCaseCenterMapController.m */; };
+		66356EA4209075F600EB761F /* WTCaseTransferConfirmViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66356EA3209075F600EB761F /* WTCaseTransferConfirmViewModel.m */; };
+		66356EAA20907CFA00EB761F /* WTAddressReportViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66356EA920907CFA00EB761F /* WTAddressReportViewModel.m */; };
+		66356EAD20907D1100EB761F /* WTAddressGetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66356EAC20907D1100EB761F /* WTAddressGetViewModel.m */; };
+		66356EB020907E1600EB761F /* WTAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66356EAF20907E1600EB761F /* WTAddressModel.m */; };
+		664C735B20E1C5AE00F28DF8 /* WTCaseDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 664C735A20E1C5AE00F28DF8 /* WTCaseDateView.m */; };
+		665178D5219141FD005AA221 /* UILabel+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 665178D4219141FD005AA221 /* UILabel+extension.m */; };
+		665178EC219176DD005AA221 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 665178EA219176DD005AA221 /* UIView+Toast.m */; };
+		6662538C20BE6EE0000F2CD7 /* WTPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6662538B20BE6EE0000F2CD7 /* WTPhotoManager.m */; };
+		666A880F2189AA1000645213 /* WTCaseCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 666A880A2189AA1000645213 /* WTCaseCenterCell.m */; };
+		666A88102189AA1000645213 /* WTCaseCenterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 666A880B2189AA1000645213 /* WTCaseCenterCell.xib */; };
+		666A88112189AA1000645213 /* WTRegionPickHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 666A880C2189AA1000645213 /* WTRegionPickHeader.m */; };
+		666A88122189AA1000645213 /* WTRegionPickObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 666A880D2189AA1000645213 /* WTRegionPickObj.m */; };
+		666A88132189AA1000645213 /* WTRegionPickCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 666A880E2189AA1000645213 /* WTRegionPickCell.m */; };
+		66850FA32190316F00B6E651 /* WTNavigationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66850FA22190316F00B6E651 /* WTNavigationModel.m */; };
+		66850FA6219034A400B6E651 /* WTNavigationChooseObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 66850FA5219034A400B6E651 /* WTNavigationChooseObj.m */; };
+		66850FAA21903A8E00B6E651 /* KLCPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 66850FA921903A8E00B6E651 /* KLCPopup.m */; };
+		66850FAE2190476800B6E651 /* JZLocationConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 66850FAC2190476700B6E651 /* JZLocationConverter.m */; };
+		66850FB221906B7800B6E651 /* ModelDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66850FB121906B7700B6E651 /* ModelDate.m */; };
+		6688E07A20BC239B00EE6AD7 /* WTCaseConfirmFromCodeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6688E07920BC239B00EE6AD7 /* WTCaseConfirmFromCodeViewModel.m */; };
+		6694A79320E3AA710080D143 /* WTCaseRelatedViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6694A79220E3AA710080D143 /* WTCaseRelatedViewModel.m */; };
+		6694A79620E3CC3B0080D143 /* WTCaseRelatedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6694A79520E3CC3B0080D143 /* WTCaseRelatedButton.m */; };
+		669611D2207C469700ADD098 /* WTMyCaseSignController.m in Sources */ = {isa = PBXBuildFile; fileRef = 669611D1207C469700ADD098 /* WTMyCaseSignController.m */; };
+		669611D5207C497F00ADD098 /* WTMyCaseSignCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 669611D4207C497F00ADD098 /* WTMyCaseSignCell.m */; };
+		669611D9207C521100ADD098 /* HYXPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 669611D8207C521100ADD098 /* HYXPlaceholderTextView.m */; };
+		66968909207DAB2500EDDE2C /* WTCaseDeliverModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66968908207DAB2500EDDE2C /* WTCaseDeliverModel.m */; };
+		6696890C207DC02600EDDE2C /* WTCaseSignSituationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6696890B207DC02600EDDE2C /* WTCaseSignSituationViewModel.m */; };
+		6696890F207DD5A300EDDE2C /* WTMyCaseSignModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6696890E207DD5A300EDDE2C /* WTMyCaseSignModel.m */; };
+		66968912207DE98E00EDDE2C /* WTCaseSignImageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66968911207DE98E00EDDE2C /* WTCaseSignImageViewModel.m */; };
+		66A0EEBB216E216200C06C3E /* city.db in Resources */ = {isa = PBXBuildFile; fileRef = 66A0EEBA216E215A00C06C3E /* city.db */; };
+		66A0EEBE216E21A100C06C3E /* WTRegionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A0EEBD216E21A100C06C3E /* WTRegionModel.m */; };
+		66A0EEC1216E24BF00C06C3E /* WTRegionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A0EEC0216E24BF00C06C3E /* WTRegionManager.m */; };
+		66A0EECD216F337200C06C3E /* UIView+SeperatorLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A0EECC216F337200C06C3E /* UIView+SeperatorLine.m */; };
+		66B6168820AC6619007E2863 /* WTCaseCenterArrivedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B6168620AC6619007E2863 /* WTCaseCenterArrivedCell.m */; };
+		66B6168920AC6619007E2863 /* WTCaseCenterArrivedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66B6168720AC6619007E2863 /* WTCaseCenterArrivedCell.xib */; };
+		66C0655020C143FC0059CBF2 /* HYXCoreFit.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C0654F20C143FC0059CBF2 /* HYXCoreFit.m */; };
+		66C0655320C146B20059CBF2 /* UIView+HYXCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C0655120C146B10059CBF2 /* UIView+HYXCategory.m */; };
+		66D0C20C2074B45B00E8B0CE /* WTMyCaseMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D0C20B2074B45B00E8B0CE /* WTMyCaseMessageController.m */; };
+		66D7B500207C628100E370D4 /* WTCaseSignCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D7B4FF207C628100E370D4 /* WTCaseSignCollectionCell.m */; };
+		66D7B503207C839500E370D4 /* WTMyCaseSignResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D7B502207C839500E370D4 /* WTMyCaseSignResultController.m */; };
+		66D7B509207CC35400E370D4 /* WTLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D7B508207CC35400E370D4 /* WTLocationManager.m */; };
+		66D7B50C207CD3B000E370D4 /* WTCaseSignViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D7B50B207CD3B000E370D4 /* WTCaseSignViewModel.m */; };
+		66F50B00208D7EAF00D2DBC1 /* WTMessageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F50AFF208D7EAF00D2DBC1 /* WTMessageManager.m */; };
+		66F50B03208D7EE900D2DBC1 /* WTMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F50B02208D7EE900D2DBC1 /* WTMessageModel.m */; };
+		B10E205D206B718D00F88161 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B10E205C206B718D00F88161 /* AppDelegate.m */; };
+		B10E2063206B719F00F88161 /* WTBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B10E2060206B719F00F88161 /* WTBaseViewModel.m */; };
+		B10E2064206B719F00F88161 /* WTBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B10E2062206B719F00F88161 /* WTBaseModel.m */; };
+		B10E207E206B71DA00F88161 /* WTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B10E2078206B71DA00F88161 /* WTNavigationController.m */; };
+		B10E207F206B71DA00F88161 /* WTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B10E207C206B71DA00F88161 /* WTTabBarController.m */; };
+		B10E2080206B71DA00F88161 /* WTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B10E207D206B71DA00F88161 /* WTTabBar.m */; };
+		B10E20B3206B71E600F88161 /* Address.plist in Resources */ = {isa = PBXBuildFile; fileRef = B10E2095206B71E600F88161 /* Address.plist */; };
+		B10E20B5206B71E600F88161 /* NSString+HYXCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B10E2099206B71E600F88161 /* NSString+HYXCategory.m */; };
+		B10E20B6206B71E600F88161 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = B10E209D206B71E600F88161 /* UIImage+Image.m */; };
+		B10E20B9206B71E600F88161 /* UISearchBar+HYXAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B10E20A0206B71E600F88161 /* UISearchBar+HYXAdd.m */; };
+		B10E20DC206B73F500F88161 /* WTCaseCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = B10E20C1206B73F500F88161 /* WTCaseCodeController.m */; };
+		B10E20DD206B73F500F88161 /* WTMyCaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = B10E20C8206B73F500F88161 /* WTMyCaseController.m */; };
+		B10E20DE206B73F500F88161 /* WTMyCaseUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = B10E20CC206B73F500F88161 /* WTMyCaseUserView.m */; };
+		B10E20E0206B73F500F88161 /* WTMyCaseUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B10E20CE206B73F500F88161 /* WTMyCaseUserCell.m */; };
+		B10E20E1206B73F500F88161 /* WTMyCaseMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = B10E20CF206B73F500F88161 /* WTMyCaseMapView.m */; };
+		B10E20E2206B73F500F88161 /* WTMyCaseListView.m in Sources */ = {isa = PBXBuildFile; fileRef = B10E20D4206B73F500F88161 /* WTMyCaseListView.m */; };
+		B10E20E3206B73F500F88161 /* WTCaseCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = B10E20D9206B73F500F88161 /* WTCaseCenterController.m */; };
+		B10E20E7206B79F700F88161 /* WTHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B10E20E5206B79F700F88161 /* WTHTTPSessionManager.m */; };
+		B10E20EA206B7A1000F88161 /* WTAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B10E20E9206B7A1000F88161 /* WTAccountManager.m */; };
+		B10E20F7206B9AB400F88161 /* WTLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = B10E20F6206B9AB400F88161 /* WTLoginController.m */; };
+		B111EB482084896B00C3656C /* WTMyCaseSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = B111EB472084896B00C3656C /* WTMyCaseSearchController.m */; };
+		B111EB4B2084973100C3656C /* WTMyCaseSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B111EB4A2084973100C3656C /* WTMyCaseSearchModel.m */; };
+		B1304ED52069CF92006DC9A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1304ED42069CF92006DC9A3 /* Assets.xcassets */; };
+		B1304EDB2069CF92006DC9A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1304EDA2069CF92006DC9A3 /* main.m */; };
+		B1304EE52069CF92006DC9A3 /* SongDaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1304EE42069CF92006DC9A3 /* SongDaTests.m */; };
+		B1304EF02069CF92006DC9A3 /* SongDaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1304EEF2069CF92006DC9A3 /* SongDaUITests.m */; };
+		B1304F4E206A193F006DC9A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1304F4D206A193F006DC9A3 /* LaunchScreen.storyboard */; };
+		B156ADD32073296900A97BD8 /* WTCaseDetailController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B156ADD22073296900A97BD8 /* WTCaseDetailController.storyboard */; };
+		B156ADD62073574A00A97BD8 /* WTMyCaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B156ADD52073574A00A97BD8 /* WTMyCaseModel.m */; };
+		B156ADD9207382B800A97BD8 /* WTTotalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B156ADD8207382B800A97BD8 /* WTTotalModel.m */; };
+		B17B1A8B2071FB4A00696ADF /* WTCaseDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = B17B1A8A2071FB4A00696ADF /* WTCaseDetailController.m */; };
+		B17B1A9120720E1A00696ADF /* UILabel+HYXCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B17B1A9020720E1A00696ADF /* UILabel+HYXCategory.m */; };
+		B17B1A9420721DF200696ADF /* WTCaseCenterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B17B1A9320721DF200696ADF /* WTCaseCenterViewModel.m */; };
+		B17B1A98207232E200696ADF /* WTMyCaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B17B1A96207232E200696ADF /* WTMyCaseCell.m */; };
+		B17B1A99207232E200696ADF /* WTMyCaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B17B1A97207232E200696ADF /* WTMyCaseCell.xib */; };
+		B180F68C208582B700D59296 /* WTUserTrafficController.m in Sources */ = {isa = PBXBuildFile; fileRef = B180F68B208582B700D59296 /* WTUserTrafficController.m */; };
+		B180F68F2085949E00D59296 /* WTMyCaseNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = B180F68E2085949E00D59296 /* WTMyCaseNaviController.m */; };
+		B180F6922085C98000D59296 /* WTSearchAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B180F6912085C98000D59296 /* WTSearchAnnotation.m */; };
+		B180F6952085CE5C00D59296 /* WTCaseSearchCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = B180F6942085CE5C00D59296 /* WTCaseSearchCalloutView.m */; };
+		B180F69820860ED900D59296 /* WTBusRouteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B180F69720860ED900D59296 /* WTBusRouteModel.m */; };
+		B193F1AE206C81DB00C47A73 /* WTLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B193F1AD206C81DB00C47A73 /* WTLoginViewModel.m */; };
+		B193F1B4206C93F400C47A73 /* WTForgetPwdController.m in Sources */ = {isa = PBXBuildFile; fileRef = B193F1B3206C93F400C47A73 /* WTForgetPwdController.m */; };
+		B193F1BA206CC76300C47A73 /* WTCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B193F1B9206CC76300C47A73 /* WTCacheManager.m */; };
+		B193F1BD206CDA3500C47A73 /* WTModifyPwdController.m in Sources */ = {isa = PBXBuildFile; fileRef = B193F1BC206CDA3500C47A73 /* WTModifyPwdController.m */; };
+		B193F1C0206CEA9700C47A73 /* WTMyCaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B193F1BF206CEA9700C47A73 /* WTMyCaseViewModel.m */; };
+		B1C54735207F0C9500200BAC /* WTMyCaseCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C54734207F0C9500200BAC /* WTMyCaseCalloutView.m */; };
+		B1C54738207F6D3800200BAC /* WTAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C54737207F6D3800200BAC /* WTAnnotationView.m */; };
+		B1E07C8320873C8100ADEC37 /* WTMyCaseByBusController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E07C8220873C8100ADEC37 /* WTMyCaseByBusController.m */; };
+		B1EAB0732080598F006288EB /* WTAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EAB0722080598F006288EB /* WTAnnotation.m */; };
+		B1EAB07A2080B6C0006288EB /* WTMyCaseArrivedController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EAB0792080B6C0006288EB /* WTMyCaseArrivedController.m */; };
+		B1EAB07E2080C864006288EB /* WTCaseArrivedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EAB07C2080C864006288EB /* WTCaseArrivedCell.m */; };
+		B1EAB07F2080C864006288EB /* WTCaseArrivedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1EAB07D2080C864006288EB /* WTCaseArrivedCell.xib */; };
+		B1EAB0822080CBD0006288EB /* WTCaseArrivedViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EAB0812080CBD0006288EB /* WTCaseArrivedViewModel.m */; };
+		B1EAB0852080D477006288EB /* WTCaseArrivedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EAB0842080D477006288EB /* WTCaseArrivedModel.m */; };
+		E10C055DA7A1519327FCE853 /* libPods-SongDa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0F5D131BB9B6414C792455 /* libPods-SongDa.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1304EE12069CF92006DC9A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1304EC02069CF92006DC9A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1304EC72069CF92006DC9A3;
+			remoteInfo = SongDa;
+		};
+		B1304EEC2069CF92006DC9A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1304EC02069CF92006DC9A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1304EC72069CF92006DC9A3;
+			remoteInfo = SongDa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C0F5D131BB9B6414C792455 /* libPods-SongDa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SongDa.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6602F91E2091C39600AB6313 /* WTMyCaseSignDetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTMyCaseSignDetailViewModel.h; sourceTree = "<group>"; };
+		6602F91F2091C39600AB6313 /* WTMyCaseSignDetailViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTMyCaseSignDetailViewModel.m; sourceTree = "<group>"; };
+		6602F9212091DB1F00AB6313 /* WTMyCaseSignDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTMyCaseSignDetailModel.h; sourceTree = "<group>"; };
+		6602F9222091DB1F00AB6313 /* WTMyCaseSignDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTMyCaseSignDetailModel.m; sourceTree = "<group>"; };
+		660FF1992079A6B600D53444 /* WTCaseDetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseDetailViewModel.h; sourceTree = "<group>"; };
+		660FF19A2079A6B600D53444 /* WTCaseDetailViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseDetailViewModel.m; sourceTree = "<group>"; };
+		660FF19C2079B19700D53444 /* WTCaseDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseDetailModel.h; sourceTree = "<group>"; };
+		660FF19D2079B19700D53444 /* WTCaseDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseDetailModel.m; sourceTree = "<group>"; };
+		660FF19F2079BFA200D53444 /* WTCaseTransferViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseTransferViewModel.h; sourceTree = "<group>"; };
+		660FF1A02079BFA200D53444 /* WTCaseTransferViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseTransferViewModel.m; sourceTree = "<group>"; };
+		660FF1AD2079E96E00D53444 /* WTCaseTransferCodeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseTransferCodeController.h; sourceTree = "<group>"; };
+		660FF1AE2079E96E00D53444 /* WTCaseTransferCodeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseTransferCodeController.m; sourceTree = "<group>"; };
+		660FF1B02079E99200D53444 /* WTCaseTransferOperateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseTransferOperateController.h; sourceTree = "<group>"; };
+		660FF1B12079E99200D53444 /* WTCaseTransferOperateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseTransferOperateController.m; sourceTree = "<group>"; };
+		660FF1B3207A031A00D53444 /* WTCaseTransferCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseTransferCell.h; sourceTree = "<group>"; };
+		660FF1B4207A031A00D53444 /* WTCaseTransferCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseTransferCell.m; sourceTree = "<group>"; };
+		660FF1B6207A0A7200D53444 /* WTCaseTransferDelivererViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseTransferDelivererViewModel.h; sourceTree = "<group>"; };
+		660FF1B7207A0A7200D53444 /* WTCaseTransferDelivererViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseTransferDelivererViewModel.m; sourceTree = "<group>"; };
+		660FF1B9207A0E3100D53444 /* WTCaseTransferDelivererModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseTransferDelivererModel.h; sourceTree = "<group>"; };
+		660FF1BA207A0E3100D53444 /* WTCaseTransferDelivererModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseTransferDelivererModel.m; sourceTree = "<group>"; };
+		6628EC0E207AF1A1008DE508 /* WTPlaceholderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTPlaceholderView.h; sourceTree = "<group>"; };
+		6628EC0F207AF1A1008DE508 /* WTPlaceholderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTPlaceholderView.m; sourceTree = "<group>"; };
+		6628EC11207B12B9008DE508 /* WTCaseCenterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseCenterModel.h; sourceTree = "<group>"; };
+		6628EC12207B12B9008DE508 /* WTCaseCenterModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseCenterModel.m; sourceTree = "<group>"; };
+		6628EC14207B50E1008DE508 /* WTCaseCenterRegionsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseCenterRegionsViewModel.h; sourceTree = "<group>"; };
+		6628EC15207B50E1008DE508 /* WTCaseCenterRegionsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseCenterRegionsViewModel.m; sourceTree = "<group>"; };
+		6628EC17207B58E9008DE508 /* WTCaseRegionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseRegionModel.h; sourceTree = "<group>"; };
+		6628EC18207B58E9008DE508 /* WTCaseRegionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseRegionModel.m; sourceTree = "<group>"; };
+		66291AEF20886894000AD16C /* SongDa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SongDa.entitlements; sourceTree = "<group>"; };
+		66356E9F20906ECE00EB761F /* WTCaseCenterMapController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseCenterMapController.h; sourceTree = "<group>"; };
+		66356EA020906ECE00EB761F /* WTCaseCenterMapController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseCenterMapController.m; sourceTree = "<group>"; };
+		66356EA2209075F600EB761F /* WTCaseTransferConfirmViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseTransferConfirmViewModel.h; sourceTree = "<group>"; };
+		66356EA3209075F600EB761F /* WTCaseTransferConfirmViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseTransferConfirmViewModel.m; sourceTree = "<group>"; };
+		66356EA820907CFA00EB761F /* WTAddressReportViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTAddressReportViewModel.h; sourceTree = "<group>"; };
+		66356EA920907CFA00EB761F /* WTAddressReportViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTAddressReportViewModel.m; sourceTree = "<group>"; };
+		66356EAB20907D1100EB761F /* WTAddressGetViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTAddressGetViewModel.h; sourceTree = "<group>"; };
+		66356EAC20907D1100EB761F /* WTAddressGetViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTAddressGetViewModel.m; sourceTree = "<group>"; };
+		66356EAE20907E1600EB761F /* WTAddressModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTAddressModel.h; sourceTree = "<group>"; };
+		66356EAF20907E1600EB761F /* WTAddressModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTAddressModel.m; sourceTree = "<group>"; };
+		664C735920E1C5AE00F28DF8 /* WTCaseDateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseDateView.h; sourceTree = "<group>"; };
+		664C735A20E1C5AE00F28DF8 /* WTCaseDateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseDateView.m; sourceTree = "<group>"; };
+		665178D3219141FD005AA221 /* UILabel+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+extension.h"; sourceTree = "<group>"; };
+		665178D4219141FD005AA221 /* UILabel+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+extension.m"; sourceTree = "<group>"; };
+		665178EA219176DD005AA221 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		665178EB219176DD005AA221 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		6662538A20BE6EE0000F2CD7 /* WTPhotoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTPhotoManager.h; sourceTree = "<group>"; };
+		6662538B20BE6EE0000F2CD7 /* WTPhotoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTPhotoManager.m; sourceTree = "<group>"; };
+		666A88062189AA1000645213 /* WTRegionPickObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTRegionPickObj.h; sourceTree = "<group>"; };
+		666A88072189AA1000645213 /* WTRegionPickHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTRegionPickHeader.h; sourceTree = "<group>"; };
+		666A88082189AA1000645213 /* WTCaseCenterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTCaseCenterCell.h; sourceTree = "<group>"; };
+		666A88092189AA1000645213 /* WTRegionPickCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTRegionPickCell.h; sourceTree = "<group>"; };
+		666A880A2189AA1000645213 /* WTCaseCenterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTCaseCenterCell.m; sourceTree = "<group>"; };
+		666A880B2189AA1000645213 /* WTCaseCenterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTCaseCenterCell.xib; sourceTree = "<group>"; };
+		666A880C2189AA1000645213 /* WTRegionPickHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTRegionPickHeader.m; sourceTree = "<group>"; };
+		666A880D2189AA1000645213 /* WTRegionPickObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTRegionPickObj.m; sourceTree = "<group>"; };
+		666A880E2189AA1000645213 /* WTRegionPickCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTRegionPickCell.m; sourceTree = "<group>"; };
+		66850FA12190316F00B6E651 /* WTNavigationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTNavigationModel.h; sourceTree = "<group>"; };
+		66850FA22190316F00B6E651 /* WTNavigationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTNavigationModel.m; sourceTree = "<group>"; };
+		66850FA4219034A400B6E651 /* WTNavigationChooseObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTNavigationChooseObj.h; sourceTree = "<group>"; };
+		66850FA5219034A400B6E651 /* WTNavigationChooseObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTNavigationChooseObj.m; sourceTree = "<group>"; };
+		66850FA821903A8E00B6E651 /* KLCPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCPopup.h; sourceTree = "<group>"; };
+		66850FA921903A8E00B6E651 /* KLCPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCPopup.m; sourceTree = "<group>"; };
+		66850FAC2190476700B6E651 /* JZLocationConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZLocationConverter.m; sourceTree = "<group>"; };
+		66850FAD2190476700B6E651 /* JZLocationConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZLocationConverter.h; sourceTree = "<group>"; };
+		66850FB021906B7700B6E651 /* ModelDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelDate.h; sourceTree = "<group>"; };
+		66850FB121906B7700B6E651 /* ModelDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelDate.m; sourceTree = "<group>"; };
+		6688E07820BC239B00EE6AD7 /* WTCaseConfirmFromCodeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseConfirmFromCodeViewModel.h; sourceTree = "<group>"; };
+		6688E07920BC239B00EE6AD7 /* WTCaseConfirmFromCodeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseConfirmFromCodeViewModel.m; sourceTree = "<group>"; };
+		6694A79120E3AA710080D143 /* WTCaseRelatedViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseRelatedViewModel.h; sourceTree = "<group>"; };
+		6694A79220E3AA710080D143 /* WTCaseRelatedViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseRelatedViewModel.m; sourceTree = "<group>"; };
+		6694A79420E3CC3B0080D143 /* WTCaseRelatedButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseRelatedButton.h; sourceTree = "<group>"; };
+		6694A79520E3CC3B0080D143 /* WTCaseRelatedButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseRelatedButton.m; sourceTree = "<group>"; };
+		669611D0207C469700ADD098 /* WTMyCaseSignController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTMyCaseSignController.h; sourceTree = "<group>"; };
+		669611D1207C469700ADD098 /* WTMyCaseSignController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTMyCaseSignController.m; sourceTree = "<group>"; };
+		669611D3207C497F00ADD098 /* WTMyCaseSignCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTMyCaseSignCell.h; sourceTree = "<group>"; };
+		669611D4207C497F00ADD098 /* WTMyCaseSignCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTMyCaseSignCell.m; sourceTree = "<group>"; };
+		669611D7207C521100ADD098 /* HYXPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYXPlaceholderTextView.h; sourceTree = "<group>"; };
+		669611D8207C521100ADD098 /* HYXPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYXPlaceholderTextView.m; sourceTree = "<group>"; };
+		66968907207DAB2500EDDE2C /* WTCaseDeliverModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseDeliverModel.h; sourceTree = "<group>"; };
+		66968908207DAB2500EDDE2C /* WTCaseDeliverModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseDeliverModel.m; sourceTree = "<group>"; };
+		6696890A207DC02600EDDE2C /* WTCaseSignSituationViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseSignSituationViewModel.h; sourceTree = "<group>"; };
+		6696890B207DC02600EDDE2C /* WTCaseSignSituationViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseSignSituationViewModel.m; sourceTree = "<group>"; };
+		6696890D207DD5A300EDDE2C /* WTMyCaseSignModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTMyCaseSignModel.h; sourceTree = "<group>"; };
+		6696890E207DD5A300EDDE2C /* WTMyCaseSignModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTMyCaseSignModel.m; sourceTree = "<group>"; };
+		66968910207DE98E00EDDE2C /* WTCaseSignImageViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseSignImageViewModel.h; sourceTree = "<group>"; };
+		66968911207DE98E00EDDE2C /* WTCaseSignImageViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseSignImageViewModel.m; sourceTree = "<group>"; };
+		66A0EEBA216E215A00C06C3E /* city.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = city.db; sourceTree = "<group>"; };
+		66A0EEBC216E21A100C06C3E /* WTRegionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTRegionModel.h; sourceTree = "<group>"; };
+		66A0EEBD216E21A100C06C3E /* WTRegionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTRegionModel.m; sourceTree = "<group>"; };
+		66A0EEBF216E24BF00C06C3E /* WTRegionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTRegionManager.h; sourceTree = "<group>"; };
+		66A0EEC0216E24BF00C06C3E /* WTRegionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTRegionManager.m; sourceTree = "<group>"; };
+		66A0EECB216F337200C06C3E /* UIView+SeperatorLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SeperatorLine.h"; sourceTree = "<group>"; };
+		66A0EECC216F337200C06C3E /* UIView+SeperatorLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SeperatorLine.m"; sourceTree = "<group>"; };
+		66B6168520AC6619007E2863 /* WTCaseCenterArrivedCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseCenterArrivedCell.h; sourceTree = "<group>"; };
+		66B6168620AC6619007E2863 /* WTCaseCenterArrivedCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseCenterArrivedCell.m; sourceTree = "<group>"; };
+		66B6168720AC6619007E2863 /* WTCaseCenterArrivedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WTCaseCenterArrivedCell.xib; sourceTree = "<group>"; };
+		66C0654E20C143FC0059CBF2 /* HYXCoreFit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYXCoreFit.h; sourceTree = "<group>"; };
+		66C0654F20C143FC0059CBF2 /* HYXCoreFit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYXCoreFit.m; sourceTree = "<group>"; };
+		66C0655120C146B10059CBF2 /* UIView+HYXCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HYXCategory.m"; sourceTree = "<group>"; };
+		66C0655220C146B20059CBF2 /* UIView+HYXCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HYXCategory.h"; sourceTree = "<group>"; };
+		66D0C20A2074B45B00E8B0CE /* WTMyCaseMessageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTMyCaseMessageController.h; sourceTree = "<group>"; };
+		66D0C20B2074B45B00E8B0CE /* WTMyCaseMessageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTMyCaseMessageController.m; sourceTree = "<group>"; };
+		66D7B4FE207C628100E370D4 /* WTCaseSignCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseSignCollectionCell.h; sourceTree = "<group>"; };
+		66D7B4FF207C628100E370D4 /* WTCaseSignCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseSignCollectionCell.m; sourceTree = "<group>"; };
+		66D7B501207C839500E370D4 /* WTMyCaseSignResultController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTMyCaseSignResultController.h; sourceTree = "<group>"; };
+		66D7B502207C839500E370D4 /* WTMyCaseSignResultController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTMyCaseSignResultController.m; sourceTree = "<group>"; };
+		66D7B507207CC35400E370D4 /* WTLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTLocationManager.h; sourceTree = "<group>"; };
+		66D7B508207CC35400E370D4 /* WTLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTLocationManager.m; sourceTree = "<group>"; };
+		66D7B50A207CD3B000E370D4 /* WTCaseSignViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseSignViewModel.h; sourceTree = "<group>"; };
+		66D7B50B207CD3B000E370D4 /* WTCaseSignViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseSignViewModel.m; sourceTree = "<group>"; };
+		66F50AFE208D7EAF00D2DBC1 /* WTMessageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTMessageManager.h; sourceTree = "<group>"; };
+		66F50AFF208D7EAF00D2DBC1 /* WTMessageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTMessageManager.m; sourceTree = "<group>"; };
+		66F50B01208D7EE900D2DBC1 /* WTMessageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTMessageModel.h; sourceTree = "<group>"; };
+		66F50B02208D7EE900D2DBC1 /* WTMessageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTMessageModel.m; sourceTree = "<group>"; };
+		70F07C6E8F5E41E3D736731F /* Pods-SongDa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SongDa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SongDa/Pods-SongDa.debug.xcconfig"; sourceTree = "<group>"; };
+		B10E205B206B718D00F88161 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B10E205C206B718D00F88161 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B10E205F206B719F00F88161 /* WTBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTBaseModel.h; sourceTree = "<group>"; };
+		B10E2060206B719F00F88161 /* WTBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTBaseViewModel.m; sourceTree = "<group>"; };
+		B10E2061206B719F00F88161 /* WTBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTBaseViewModel.h; sourceTree = "<group>"; };
+		B10E2062206B719F00F88161 /* WTBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTBaseModel.m; sourceTree = "<group>"; };
+		B10E206D206B71CC00F88161 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B10E2078206B71DA00F88161 /* WTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTNavigationController.m; sourceTree = "<group>"; };
+		B10E2079206B71DA00F88161 /* WTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTTabBar.h; sourceTree = "<group>"; };
+		B10E207A206B71DA00F88161 /* WTTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTTabBarController.h; sourceTree = "<group>"; };
+		B10E207B206B71DA00F88161 /* WTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTNavigationController.h; sourceTree = "<group>"; };
+		B10E207C206B71DA00F88161 /* WTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTabBarController.m; sourceTree = "<group>"; };
+		B10E207D206B71DA00F88161 /* WTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTabBar.m; sourceTree = "<group>"; };
+		B10E2095206B71E600F88161 /* Address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Address.plist; sourceTree = "<group>"; };
+		B10E2099206B71E600F88161 /* NSString+HYXCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HYXCategory.m"; sourceTree = "<group>"; };
+		B10E209D206B71E600F88161 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		B10E20A0206B71E600F88161 /* UISearchBar+HYXAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+HYXAdd.m"; sourceTree = "<group>"; };
+		B10E20A3206B71E600F88161 /* NSString+HYXCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HYXCategory.h"; sourceTree = "<group>"; };
+		B10E20A5206B71E600F88161 /* HYXDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYXDefine.h; sourceTree = "<group>"; };
+		B10E20A7206B71E600F88161 /* HYXKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYXKit.h; sourceTree = "<group>"; };
+		B10E20AA206B71E600F88161 /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		B10E20AB206B71E600F88161 /* UISearchBar+HYXAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+HYXAdd.h"; sourceTree = "<group>"; };
+		B10E20C1206B73F500F88161 /* WTCaseCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTCaseCodeController.m; sourceTree = "<group>"; };
+		B10E20C2206B73F500F88161 /* WTCaseCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTCaseCodeController.h; sourceTree = "<group>"; };
+		B10E20C8206B73F500F88161 /* WTMyCaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMyCaseController.m; sourceTree = "<group>"; };
+		B10E20C9206B73F500F88161 /* WTMyCaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMyCaseController.h; sourceTree = "<group>"; };
+		B10E20CC206B73F500F88161 /* WTMyCaseUserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMyCaseUserView.m; sourceTree = "<group>"; };
+		B10E20CE206B73F500F88161 /* WTMyCaseUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMyCaseUserCell.m; sourceTree = "<group>"; };
+		B10E20CF206B73F500F88161 /* WTMyCaseMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMyCaseMapView.m; sourceTree = "<group>"; };
+		B10E20D0206B73F500F88161 /* WTMyCaseListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMyCaseListView.h; sourceTree = "<group>"; };
+		B10E20D1206B73F500F88161 /* WTMyCaseUserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMyCaseUserView.h; sourceTree = "<group>"; };
+		B10E20D2206B73F500F88161 /* WTMyCaseUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMyCaseUserCell.h; sourceTree = "<group>"; };
+		B10E20D3206B73F500F88161 /* WTMyCaseMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMyCaseMapView.h; sourceTree = "<group>"; };
+		B10E20D4206B73F500F88161 /* WTMyCaseListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMyCaseListView.m; sourceTree = "<group>"; };
+		B10E20D8206B73F500F88161 /* WTCaseCenterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTCaseCenterController.h; sourceTree = "<group>"; };
+		B10E20D9206B73F500F88161 /* WTCaseCenterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTCaseCenterController.m; sourceTree = "<group>"; };
+		B10E20E5206B79F700F88161 /* WTHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTHTTPSessionManager.m; sourceTree = "<group>"; };
+		B10E20E6206B79F700F88161 /* WTHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTHTTPSessionManager.h; sourceTree = "<group>"; };
+		B10E20E8206B7A1000F88161 /* WTAccountManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTAccountManager.h; sourceTree = "<group>"; };
+		B10E20E9206B7A1000F88161 /* WTAccountManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTAccountManager.m; sourceTree = "<group>"; };
+		B10E20EB206B901D00F88161 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SongDa/Info.plist; sourceTree = SOURCE_ROOT; };
+		B10E20ED206B90A800F88161 /* WTNotificationConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTNotificationConfig.h; sourceTree = "<group>"; };
+		B10E20F5206B9AB400F88161 /* WTLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTLoginController.h; sourceTree = "<group>"; };
+		B10E20F6206B9AB400F88161 /* WTLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTLoginController.m; sourceTree = "<group>"; };
+		B111EB462084896B00C3656C /* WTMyCaseSearchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTMyCaseSearchController.h; sourceTree = "<group>"; };
+		B111EB472084896B00C3656C /* WTMyCaseSearchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTMyCaseSearchController.m; sourceTree = "<group>"; };
+		B111EB492084973100C3656C /* WTMyCaseSearchModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTMyCaseSearchModel.h; sourceTree = "<group>"; };
+		B111EB4A2084973100C3656C /* WTMyCaseSearchModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTMyCaseSearchModel.m; sourceTree = "<group>"; };
+		B1304EC82069CF92006DC9A3 /* SongDa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SongDa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1304ED42069CF92006DC9A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1304EDA2069CF92006DC9A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B1304EE02069CF92006DC9A3 /* SongDaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SongDaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1304EE42069CF92006DC9A3 /* SongDaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongDaTests.m; sourceTree = "<group>"; };
+		B1304EE62069CF92006DC9A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1304EEB2069CF92006DC9A3 /* SongDaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SongDaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1304EEF2069CF92006DC9A3 /* SongDaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongDaUITests.m; sourceTree = "<group>"; };
+		B1304EF12069CF92006DC9A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1304F4D206A193F006DC9A3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B156ADD22073296900A97BD8 /* WTCaseDetailController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WTCaseDetailController.storyboard; sourceTree = "<group>"; };
+		B156ADD42073574A00A97BD8 /* WTMyCaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTMyCaseModel.h; sourceTree = "<group>"; };
+		B156ADD52073574A00A97BD8 /* WTMyCaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTMyCaseModel.m; sourceTree = "<group>"; };
+		B156ADD7207382B800A97BD8 /* WTTotalModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTTotalModel.h; sourceTree = "<group>"; };
+		B156ADD8207382B800A97BD8 /* WTTotalModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTTotalModel.m; sourceTree = "<group>"; };
+		B17B1A892071FB4A00696ADF /* WTCaseDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseDetailController.h; sourceTree = "<group>"; };
+		B17B1A8A2071FB4A00696ADF /* WTCaseDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseDetailController.m; sourceTree = "<group>"; };
+		B17B1A8F20720E1A00696ADF /* UILabel+HYXCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+HYXCategory.h"; sourceTree = "<group>"; };
+		B17B1A9020720E1A00696ADF /* UILabel+HYXCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+HYXCategory.m"; sourceTree = "<group>"; };
+		B17B1A9220721DF200696ADF /* WTCaseCenterViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseCenterViewModel.h; sourceTree = "<group>"; };
+		B17B1A9320721DF200696ADF /* WTCaseCenterViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseCenterViewModel.m; sourceTree = "<group>"; };
+		B17B1A95207232E200696ADF /* WTMyCaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTMyCaseCell.h; sourceTree = "<group>"; };
+		B17B1A96207232E200696ADF /* WTMyCaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTMyCaseCell.m; sourceTree = "<group>"; };
+		B17B1A97207232E200696ADF /* WTMyCaseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WTMyCaseCell.xib; sourceTree = "<group>"; };
+		B180F68A208582B700D59296 /* WTUserTrafficController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTUserTrafficController.h; sourceTree = "<group>"; };
+		B180F68B208582B700D59296 /* WTUserTrafficController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTUserTrafficController.m; sourceTree = "<group>"; };
+		B180F68D2085949E00D59296 /* WTMyCaseNaviController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTMyCaseNaviController.h; sourceTree = "<group>"; };
+		B180F68E2085949E00D59296 /* WTMyCaseNaviController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTMyCaseNaviController.m; sourceTree = "<group>"; };
+		B180F6902085C98000D59296 /* WTSearchAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTSearchAnnotation.h; sourceTree = "<group>"; };
+		B180F6912085C98000D59296 /* WTSearchAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTSearchAnnotation.m; sourceTree = "<group>"; };
+		B180F6932085CE5C00D59296 /* WTCaseSearchCalloutView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseSearchCalloutView.h; sourceTree = "<group>"; };
+		B180F6942085CE5C00D59296 /* WTCaseSearchCalloutView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseSearchCalloutView.m; sourceTree = "<group>"; };
+		B180F69620860ED900D59296 /* WTBusRouteModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTBusRouteModel.h; sourceTree = "<group>"; };
+		B180F69720860ED900D59296 /* WTBusRouteModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTBusRouteModel.m; sourceTree = "<group>"; };
+		B193F1AC206C81DB00C47A73 /* WTLoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTLoginViewModel.h; sourceTree = "<group>"; };
+		B193F1AD206C81DB00C47A73 /* WTLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTLoginViewModel.m; sourceTree = "<group>"; };
+		B193F1AF206C83B500C47A73 /* WTConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTConst.h; sourceTree = "<group>"; };
+		B193F1B2206C93F400C47A73 /* WTForgetPwdController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTForgetPwdController.h; sourceTree = "<group>"; };
+		B193F1B3206C93F400C47A73 /* WTForgetPwdController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTForgetPwdController.m; sourceTree = "<group>"; };
+		B193F1B8206CC76300C47A73 /* WTCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCacheManager.h; sourceTree = "<group>"; };
+		B193F1B9206CC76300C47A73 /* WTCacheManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCacheManager.m; sourceTree = "<group>"; };
+		B193F1BB206CDA3500C47A73 /* WTModifyPwdController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTModifyPwdController.h; sourceTree = "<group>"; };
+		B193F1BC206CDA3500C47A73 /* WTModifyPwdController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTModifyPwdController.m; sourceTree = "<group>"; };
+		B193F1BE206CEA9700C47A73 /* WTMyCaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTMyCaseViewModel.h; sourceTree = "<group>"; };
+		B193F1BF206CEA9700C47A73 /* WTMyCaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTMyCaseViewModel.m; sourceTree = "<group>"; };
+		B1C54733207F0C9500200BAC /* WTMyCaseCalloutView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTMyCaseCalloutView.h; sourceTree = "<group>"; };
+		B1C54734207F0C9500200BAC /* WTMyCaseCalloutView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTMyCaseCalloutView.m; sourceTree = "<group>"; };
+		B1C54736207F6D3800200BAC /* WTAnnotationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTAnnotationView.h; sourceTree = "<group>"; };
+		B1C54737207F6D3800200BAC /* WTAnnotationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTAnnotationView.m; sourceTree = "<group>"; };
+		B1E07C8120873C8100ADEC37 /* WTMyCaseByBusController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTMyCaseByBusController.h; sourceTree = "<group>"; };
+		B1E07C8220873C8100ADEC37 /* WTMyCaseByBusController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTMyCaseByBusController.m; sourceTree = "<group>"; };
+		B1EAB0712080598F006288EB /* WTAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTAnnotation.h; sourceTree = "<group>"; };
+		B1EAB0722080598F006288EB /* WTAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTAnnotation.m; sourceTree = "<group>"; };
+		B1EAB0782080B6C0006288EB /* WTMyCaseArrivedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTMyCaseArrivedController.h; sourceTree = "<group>"; };
+		B1EAB0792080B6C0006288EB /* WTMyCaseArrivedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTMyCaseArrivedController.m; sourceTree = "<group>"; };
+		B1EAB07B2080C864006288EB /* WTCaseArrivedCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseArrivedCell.h; sourceTree = "<group>"; };
+		B1EAB07C2080C864006288EB /* WTCaseArrivedCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseArrivedCell.m; sourceTree = "<group>"; };
+		B1EAB07D2080C864006288EB /* WTCaseArrivedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WTCaseArrivedCell.xib; sourceTree = "<group>"; };
+		B1EAB0802080CBD0006288EB /* WTCaseArrivedViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseArrivedViewModel.h; sourceTree = "<group>"; };
+		B1EAB0812080CBD0006288EB /* WTCaseArrivedViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseArrivedViewModel.m; sourceTree = "<group>"; };
+		B1EAB0832080D477006288EB /* WTCaseArrivedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCaseArrivedModel.h; sourceTree = "<group>"; };
+		B1EAB0842080D477006288EB /* WTCaseArrivedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCaseArrivedModel.m; sourceTree = "<group>"; };
+		E9D2ACEF41755320C0860D0D /* Pods-SongDa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SongDa.release.xcconfig"; path = "Pods/Target Support Files/Pods-SongDa/Pods-SongDa.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1304EC52069CF92006DC9A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E10C055DA7A1519327FCE853 /* libPods-SongDa.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1304EDD2069CF92006DC9A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1304EE82069CF92006DC9A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62407556FE3B97D6427EEB48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C0F5D131BB9B6414C792455 /* libPods-SongDa.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		660FF1A52079E90900D53444 /* CaseTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				660FF1A62079E90900D53444 /* Controller */,
+				660FF1A72079E90900D53444 /* Model */,
+				660FF1A82079E90900D53444 /* View */,
+				660FF1A92079E90900D53444 /* ViewModel */,
+			);
+			path = CaseTransfer;
+			sourceTree = "<group>";
+		};
+		660FF1A62079E90900D53444 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				660FF1AD2079E96E00D53444 /* WTCaseTransferCodeController.h */,
+				660FF1AE2079E96E00D53444 /* WTCaseTransferCodeController.m */,
+				660FF1B02079E99200D53444 /* WTCaseTransferOperateController.h */,
+				660FF1B12079E99200D53444 /* WTCaseTransferOperateController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		660FF1A72079E90900D53444 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				660FF1B9207A0E3100D53444 /* WTCaseTransferDelivererModel.h */,
+				660FF1BA207A0E3100D53444 /* WTCaseTransferDelivererModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		660FF1A82079E90900D53444 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				660FF1B3207A031A00D53444 /* WTCaseTransferCell.h */,
+				660FF1B4207A031A00D53444 /* WTCaseTransferCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		660FF1A92079E90900D53444 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				660FF1B6207A0A7200D53444 /* WTCaseTransferDelivererViewModel.h */,
+				660FF1B7207A0A7200D53444 /* WTCaseTransferDelivererViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		666A88052189AA1000645213 /* YCCaseCenterViews */ = {
+			isa = PBXGroup;
+			children = (
+				666A88062189AA1000645213 /* WTRegionPickObj.h */,
+				666A880D2189AA1000645213 /* WTRegionPickObj.m */,
+				666A88072189AA1000645213 /* WTRegionPickHeader.h */,
+				666A880C2189AA1000645213 /* WTRegionPickHeader.m */,
+				666A88092189AA1000645213 /* WTRegionPickCell.h */,
+				666A880E2189AA1000645213 /* WTRegionPickCell.m */,
+				666A88082189AA1000645213 /* WTCaseCenterCell.h */,
+				666A880A2189AA1000645213 /* WTCaseCenterCell.m */,
+				666A880B2189AA1000645213 /* WTCaseCenterCell.xib */,
+			);
+			path = YCCaseCenterViews;
+			sourceTree = "<group>";
+		};
+		66850FA02190315600B6E651 /* 第三方导航 */ = {
+			isa = PBXGroup;
+			children = (
+				66850FA12190316F00B6E651 /* WTNavigationModel.h */,
+				66850FA22190316F00B6E651 /* WTNavigationModel.m */,
+			);
+			path = "第三方导航";
+			sourceTree = "<group>";
+		};
+		66850FA721903A8E00B6E651 /* KLCPopup */ = {
+			isa = PBXGroup;
+			children = (
+				66850FA821903A8E00B6E651 /* KLCPopup.h */,
+				66850FA921903A8E00B6E651 /* KLCPopup.m */,
+			);
+			path = KLCPopup;
+			sourceTree = "<group>";
+		};
+		66850FAB2190476700B6E651 /* JZLocationConverter */ = {
+			isa = PBXGroup;
+			children = (
+				66850FAD2190476700B6E651 /* JZLocationConverter.h */,
+				66850FAC2190476700B6E651 /* JZLocationConverter.m */,
+			);
+			path = JZLocationConverter;
+			sourceTree = "<group>";
+		};
+		66850FAF21906B7700B6E651 /* ModelDate */ = {
+			isa = PBXGroup;
+			children = (
+				66850FB021906B7700B6E651 /* ModelDate.h */,
+				66850FB121906B7700B6E651 /* ModelDate.m */,
+			);
+			name = ModelDate;
+			path = SongDa/ModelDate;
+			sourceTree = SOURCE_ROOT;
+		};
+		669611D6207C521100ADD098 /* HYXPlaceholderTextView */ = {
+			isa = PBXGroup;
+			children = (
+				669611D7207C521100ADD098 /* HYXPlaceholderTextView.h */,
+				669611D8207C521100ADD098 /* HYXPlaceholderTextView.m */,
+			);
+			path = HYXPlaceholderTextView;
+			sourceTree = "<group>";
+		};
+		B10E205A206B718D00F88161 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B10E205B206B718D00F88161 /* AppDelegate.h */,
+				B10E205C206B718D00F88161 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B10E205E206B719F00F88161 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				B10E205F206B719F00F88161 /* WTBaseModel.h */,
+				B10E2062206B719F00F88161 /* WTBaseModel.m */,
+				B10E2061206B719F00F88161 /* WTBaseViewModel.h */,
+				B10E2060206B719F00F88161 /* WTBaseViewModel.m */,
+				B156ADD7207382B800A97BD8 /* WTTotalModel.h */,
+				B156ADD8207382B800A97BD8 /* WTTotalModel.m */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		B10E206C206B71CC00F88161 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B193F1AF206C83B500C47A73 /* WTConst.h */,
+				B10E206D206B71CC00F88161 /* PrefixHeader.pch */,
+				B10E20ED206B90A800F88161 /* WTNotificationConfig.h */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		B10E2077206B71DA00F88161 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B10E2079206B71DA00F88161 /* WTTabBar.h */,
+				B10E207D206B71DA00F88161 /* WTTabBar.m */,
+				B10E207A206B71DA00F88161 /* WTTabBarController.h */,
+				B10E207C206B71DA00F88161 /* WTTabBarController.m */,
+				B10E207B206B71DA00F88161 /* WTNavigationController.h */,
+				B10E2078206B71DA00F88161 /* WTNavigationController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B10E2094206B71E600F88161 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				66A0EEBA216E215A00C06C3E /* city.db */,
+				B10E20EB206B901D00F88161 /* Info.plist */,
+				B10E2095206B71E600F88161 /* Address.plist */,
+				B1304F4D206A193F006DC9A3 /* LaunchScreen.storyboard */,
+				B1304EDA2069CF92006DC9A3 /* main.m */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		B10E2096206B71E600F88161 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				66850FAF21906B7700B6E651 /* ModelDate */,
+				66850FAB2190476700B6E651 /* JZLocationConverter */,
+				66850FA721903A8E00B6E651 /* KLCPopup */,
+				B10E2097206B71E600F88161 /* HYXKit */,
+				669611D6207C521100ADD098 /* HYXPlaceholderTextView */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		B10E2097206B71E600F88161 /* HYXKit */ = {
+			isa = PBXGroup;
+			children = (
+				665178EB219176DD005AA221 /* UIView+Toast.h */,
+				665178EA219176DD005AA221 /* UIView+Toast.m */,
+				66A0EECB216F337200C06C3E /* UIView+SeperatorLine.h */,
+				66A0EECC216F337200C06C3E /* UIView+SeperatorLine.m */,
+				B10E20A7206B71E600F88161 /* HYXKit.h */,
+				B10E20A5206B71E600F88161 /* HYXDefine.h */,
+				66C0654E20C143FC0059CBF2 /* HYXCoreFit.h */,
+				66C0654F20C143FC0059CBF2 /* HYXCoreFit.m */,
+				B10E20A3206B71E600F88161 /* NSString+HYXCategory.h */,
+				B10E2099206B71E600F88161 /* NSString+HYXCategory.m */,
+				B10E20AA206B71E600F88161 /* UIImage+Image.h */,
+				B10E209D206B71E600F88161 /* UIImage+Image.m */,
+				66C0655220C146B20059CBF2 /* UIView+HYXCategory.h */,
+				66C0655120C146B10059CBF2 /* UIView+HYXCategory.m */,
+				B10E20AB206B71E600F88161 /* UISearchBar+HYXAdd.h */,
+				B10E20A0206B71E600F88161 /* UISearchBar+HYXAdd.m */,
+				B17B1A8F20720E1A00696ADF /* UILabel+HYXCategory.h */,
+				B17B1A9020720E1A00696ADF /* UILabel+HYXCategory.m */,
+				665178D3219141FD005AA221 /* UILabel+extension.h */,
+				665178D4219141FD005AA221 /* UILabel+extension.m */,
+			);
+			path = HYXKit;
+			sourceTree = "<group>";
+		};
+		B10E20BD206B73F500F88161 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				B10E20F0206B99B300F88161 /* Login */,
+				B10E20BE206B73F500F88161 /* CaseCode */,
+				B10E20C5206B73F500F88161 /* MyCase */,
+				B10E20D5206B73F500F88161 /* CaseCenter */,
+				660FF1A52079E90900D53444 /* CaseTransfer */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		B10E20BE206B73F500F88161 /* CaseCode */ = {
+			isa = PBXGroup;
+			children = (
+				B10E20C0206B73F500F88161 /* Controller */,
+			);
+			path = CaseCode;
+			sourceTree = "<group>";
+		};
+		B10E20C0206B73F500F88161 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B10E20C2206B73F500F88161 /* WTCaseCodeController.h */,
+				B10E20C1206B73F500F88161 /* WTCaseCodeController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B10E20C5206B73F500F88161 /* MyCase */ = {
+			isa = PBXGroup;
+			children = (
+				B10E20CA206B73F500F88161 /* Model */,
+				B10E20CB206B73F500F88161 /* View */,
+				B10E20C6206B73F500F88161 /* ViewModel */,
+				B10E20C7206B73F500F88161 /* Controller */,
+			);
+			path = MyCase;
+			sourceTree = "<group>";
+		};
+		B10E20C6206B73F500F88161 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B193F1BE206CEA9700C47A73 /* WTMyCaseViewModel.h */,
+				B193F1BF206CEA9700C47A73 /* WTMyCaseViewModel.m */,
+				6694A79120E3AA710080D143 /* WTCaseRelatedViewModel.h */,
+				6694A79220E3AA710080D143 /* WTCaseRelatedViewModel.m */,
+				66D7B50A207CD3B000E370D4 /* WTCaseSignViewModel.h */,
+				66D7B50B207CD3B000E370D4 /* WTCaseSignViewModel.m */,
+				6696890A207DC02600EDDE2C /* WTCaseSignSituationViewModel.h */,
+				6696890B207DC02600EDDE2C /* WTCaseSignSituationViewModel.m */,
+				66968910207DE98E00EDDE2C /* WTCaseSignImageViewModel.h */,
+				66968911207DE98E00EDDE2C /* WTCaseSignImageViewModel.m */,
+				6602F91E2091C39600AB6313 /* WTMyCaseSignDetailViewModel.h */,
+				6602F91F2091C39600AB6313 /* WTMyCaseSignDetailViewModel.m */,
+				B1EAB0802080CBD0006288EB /* WTCaseArrivedViewModel.h */,
+				B1EAB0812080CBD0006288EB /* WTCaseArrivedViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B10E20C7206B73F500F88161 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B10E20C9206B73F500F88161 /* WTMyCaseController.h */,
+				B10E20C8206B73F500F88161 /* WTMyCaseController.m */,
+				66D0C20A2074B45B00E8B0CE /* WTMyCaseMessageController.h */,
+				66D0C20B2074B45B00E8B0CE /* WTMyCaseMessageController.m */,
+				669611D0207C469700ADD098 /* WTMyCaseSignController.h */,
+				669611D1207C469700ADD098 /* WTMyCaseSignController.m */,
+				66D7B501207C839500E370D4 /* WTMyCaseSignResultController.h */,
+				66D7B502207C839500E370D4 /* WTMyCaseSignResultController.m */,
+				B1EAB0782080B6C0006288EB /* WTMyCaseArrivedController.h */,
+				B1EAB0792080B6C0006288EB /* WTMyCaseArrivedController.m */,
+				B111EB462084896B00C3656C /* WTMyCaseSearchController.h */,
+				B111EB472084896B00C3656C /* WTMyCaseSearchController.m */,
+				B180F68A208582B700D59296 /* WTUserTrafficController.h */,
+				B180F68B208582B700D59296 /* WTUserTrafficController.m */,
+				B180F68D2085949E00D59296 /* WTMyCaseNaviController.h */,
+				B180F68E2085949E00D59296 /* WTMyCaseNaviController.m */,
+				B1E07C8120873C8100ADEC37 /* WTMyCaseByBusController.h */,
+				B1E07C8220873C8100ADEC37 /* WTMyCaseByBusController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B10E20CA206B73F500F88161 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B156ADD42073574A00A97BD8 /* WTMyCaseModel.h */,
+				B156ADD52073574A00A97BD8 /* WTMyCaseModel.m */,
+				6696890D207DD5A300EDDE2C /* WTMyCaseSignModel.h */,
+				6696890E207DD5A300EDDE2C /* WTMyCaseSignModel.m */,
+				6602F9212091DB1F00AB6313 /* WTMyCaseSignDetailModel.h */,
+				6602F9222091DB1F00AB6313 /* WTMyCaseSignDetailModel.m */,
+				B1EAB0712080598F006288EB /* WTAnnotation.h */,
+				B1EAB0722080598F006288EB /* WTAnnotation.m */,
+				B180F6902085C98000D59296 /* WTSearchAnnotation.h */,
+				B180F6912085C98000D59296 /* WTSearchAnnotation.m */,
+				B1EAB0832080D477006288EB /* WTCaseArrivedModel.h */,
+				B1EAB0842080D477006288EB /* WTCaseArrivedModel.m */,
+				B111EB492084973100C3656C /* WTMyCaseSearchModel.h */,
+				B111EB4A2084973100C3656C /* WTMyCaseSearchModel.m */,
+				B180F69620860ED900D59296 /* WTBusRouteModel.h */,
+				B180F69720860ED900D59296 /* WTBusRouteModel.m */,
+				66F50B01208D7EE900D2DBC1 /* WTMessageModel.h */,
+				66F50B02208D7EE900D2DBC1 /* WTMessageModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B10E20CB206B73F500F88161 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B1EAB0742080A311006288EB /* ListView */,
+				B1EAB0752080A311006288EB /* MapView */,
+				B1EAB0762080A391006288EB /* SignView */,
+				B1EAB0772080A391006288EB /* UserView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B10E20D5206B73F500F88161 /* CaseCenter */ = {
+			isa = PBXGroup;
+			children = (
+				B10E20DA206B73F500F88161 /* Model */,
+				B10E20DB206B73F500F88161 /* View */,
+				B10E20D7206B73F500F88161 /* Controller */,
+				B10E20D6206B73F500F88161 /* ViewModel */,
+			);
+			path = CaseCenter;
+			sourceTree = "<group>";
+		};
+		B10E20D6206B73F500F88161 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B17B1A9220721DF200696ADF /* WTCaseCenterViewModel.h */,
+				B17B1A9320721DF200696ADF /* WTCaseCenterViewModel.m */,
+				660FF1992079A6B600D53444 /* WTCaseDetailViewModel.h */,
+				660FF19A2079A6B600D53444 /* WTCaseDetailViewModel.m */,
+				660FF19F2079BFA200D53444 /* WTCaseTransferViewModel.h */,
+				660FF1A02079BFA200D53444 /* WTCaseTransferViewModel.m */,
+				6628EC14207B50E1008DE508 /* WTCaseCenterRegionsViewModel.h */,
+				6628EC15207B50E1008DE508 /* WTCaseCenterRegionsViewModel.m */,
+				66356EA2209075F600EB761F /* WTCaseTransferConfirmViewModel.h */,
+				66356EA3209075F600EB761F /* WTCaseTransferConfirmViewModel.m */,
+				6688E07820BC239B00EE6AD7 /* WTCaseConfirmFromCodeViewModel.h */,
+				6688E07920BC239B00EE6AD7 /* WTCaseConfirmFromCodeViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B10E20D7206B73F500F88161 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B10E20D8206B73F500F88161 /* WTCaseCenterController.h */,
+				B10E20D9206B73F500F88161 /* WTCaseCenterController.m */,
+				B17B1A892071FB4A00696ADF /* WTCaseDetailController.h */,
+				B17B1A8A2071FB4A00696ADF /* WTCaseDetailController.m */,
+				B156ADD22073296900A97BD8 /* WTCaseDetailController.storyboard */,
+				66356E9F20906ECE00EB761F /* WTCaseCenterMapController.h */,
+				66356EA020906ECE00EB761F /* WTCaseCenterMapController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B10E20DA206B73F500F88161 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6628EC11207B12B9008DE508 /* WTCaseCenterModel.h */,
+				6628EC12207B12B9008DE508 /* WTCaseCenterModel.m */,
+				660FF19C2079B19700D53444 /* WTCaseDetailModel.h */,
+				660FF19D2079B19700D53444 /* WTCaseDetailModel.m */,
+				6628EC17207B58E9008DE508 /* WTCaseRegionModel.h */,
+				6628EC18207B58E9008DE508 /* WTCaseRegionModel.m */,
+				66968907207DAB2500EDDE2C /* WTCaseDeliverModel.h */,
+				66968908207DAB2500EDDE2C /* WTCaseDeliverModel.m */,
+				66A0EEBC216E21A100C06C3E /* WTRegionModel.h */,
+				66A0EEBD216E21A100C06C3E /* WTRegionModel.m */,
+				66A0EEBF216E24BF00C06C3E /* WTRegionManager.h */,
+				66A0EEC0216E24BF00C06C3E /* WTRegionManager.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B10E20DB206B73F500F88161 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				666A88052189AA1000645213 /* YCCaseCenterViews */,
+				66B6168520AC6619007E2863 /* WTCaseCenterArrivedCell.h */,
+				66B6168620AC6619007E2863 /* WTCaseCenterArrivedCell.m */,
+				66B6168720AC6619007E2863 /* WTCaseCenterArrivedCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B10E20E4206B79F700F88161 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B10E20E6206B79F700F88161 /* WTHTTPSessionManager.h */,
+				B10E20E5206B79F700F88161 /* WTHTTPSessionManager.m */,
+				B10E20E8206B7A1000F88161 /* WTAccountManager.h */,
+				B10E20E9206B7A1000F88161 /* WTAccountManager.m */,
+				B193F1B8206CC76300C47A73 /* WTCacheManager.h */,
+				B193F1B9206CC76300C47A73 /* WTCacheManager.m */,
+				6662538A20BE6EE0000F2CD7 /* WTPhotoManager.h */,
+				6662538B20BE6EE0000F2CD7 /* WTPhotoManager.m */,
+				6628EC0E207AF1A1008DE508 /* WTPlaceholderView.h */,
+				6628EC0F207AF1A1008DE508 /* WTPlaceholderView.m */,
+				66D7B507207CC35400E370D4 /* WTLocationManager.h */,
+				66D7B508207CC35400E370D4 /* WTLocationManager.m */,
+				66F50AFE208D7EAF00D2DBC1 /* WTMessageManager.h */,
+				66F50AFF208D7EAF00D2DBC1 /* WTMessageManager.m */,
+				66356EA820907CFA00EB761F /* WTAddressReportViewModel.h */,
+				66356EA920907CFA00EB761F /* WTAddressReportViewModel.m */,
+				66356EAB20907D1100EB761F /* WTAddressGetViewModel.h */,
+				66356EAC20907D1100EB761F /* WTAddressGetViewModel.m */,
+				66356EAE20907E1600EB761F /* WTAddressModel.h */,
+				66356EAF20907E1600EB761F /* WTAddressModel.m */,
+				66850FA02190315600B6E651 /* 第三方导航 */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B10E20F0206B99B300F88161 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B10E20F4206B9A9D00F88161 /* Controller */,
+				B193F1AB206C81C700C47A73 /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B10E20F4206B9A9D00F88161 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B10E20F5206B9AB400F88161 /* WTLoginController.h */,
+				B10E20F6206B9AB400F88161 /* WTLoginController.m */,
+				B193F1B2206C93F400C47A73 /* WTForgetPwdController.h */,
+				B193F1B3206C93F400C47A73 /* WTForgetPwdController.m */,
+				B193F1BB206CDA3500C47A73 /* WTModifyPwdController.h */,
+				B193F1BC206CDA3500C47A73 /* WTModifyPwdController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B1304EBF2069CF92006DC9A3 = {
+			isa = PBXGroup;
+			children = (
+				B1304ECA2069CF92006DC9A3 /* SongDa */,
+				B1304EE32069CF92006DC9A3 /* SongDaTests */,
+				B1304EEE2069CF92006DC9A3 /* SongDaUITests */,
+				B1304EC92069CF92006DC9A3 /* Products */,
+				FE6174493FE44A775F0FC201 /* Pods */,
+				62407556FE3B97D6427EEB48 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B1304EC92069CF92006DC9A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1304EC82069CF92006DC9A3 /* SongDa.app */,
+				B1304EE02069CF92006DC9A3 /* SongDaTests.xctest */,
+				B1304EEB2069CF92006DC9A3 /* SongDaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1304ECA2069CF92006DC9A3 /* SongDa */ = {
+			isa = PBXGroup;
+			children = (
+				66291AEF20886894000AD16C /* SongDa.entitlements */,
+				B10E205A206B718D00F88161 /* AppDelegate */,
+				B10E2077206B71DA00F88161 /* Main */,
+				B10E205E206B719F00F88161 /* BaseClass */,
+				B10E20E4206B79F700F88161 /* Service */,
+				B10E206C206B71CC00F88161 /* Config */,
+				B10E2096206B71E600F88161 /* Vendors */,
+				B10E20BD206B73F500F88161 /* Interface */,
+				B10E2094206B71E600F88161 /* Resource */,
+				B1304ED42069CF92006DC9A3 /* Assets.xcassets */,
+			);
+			path = SongDa;
+			sourceTree = "<group>";
+		};
+		B1304EE32069CF92006DC9A3 /* SongDaTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1304EE42069CF92006DC9A3 /* SongDaTests.m */,
+				B1304EE62069CF92006DC9A3 /* Info.plist */,
+			);
+			path = SongDaTests;
+			sourceTree = "<group>";
+		};
+		B1304EEE2069CF92006DC9A3 /* SongDaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B1304EEF2069CF92006DC9A3 /* SongDaUITests.m */,
+				B1304EF12069CF92006DC9A3 /* Info.plist */,
+			);
+			path = SongDaUITests;
+			sourceTree = "<group>";
+		};
+		B193F1AB206C81C700C47A73 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B193F1AC206C81DB00C47A73 /* WTLoginViewModel.h */,
+				B193F1AD206C81DB00C47A73 /* WTLoginViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B1EAB0742080A311006288EB /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				B17B1A95207232E200696ADF /* WTMyCaseCell.h */,
+				B17B1A96207232E200696ADF /* WTMyCaseCell.m */,
+				B17B1A97207232E200696ADF /* WTMyCaseCell.xib */,
+				B10E20D0206B73F500F88161 /* WTMyCaseListView.h */,
+				B10E20D4206B73F500F88161 /* WTMyCaseListView.m */,
+				B1EAB07B2080C864006288EB /* WTCaseArrivedCell.h */,
+				B1EAB07C2080C864006288EB /* WTCaseArrivedCell.m */,
+				B1EAB07D2080C864006288EB /* WTCaseArrivedCell.xib */,
+				664C735920E1C5AE00F28DF8 /* WTCaseDateView.h */,
+				664C735A20E1C5AE00F28DF8 /* WTCaseDateView.m */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		B1EAB0752080A311006288EB /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				B10E20D3206B73F500F88161 /* WTMyCaseMapView.h */,
+				B10E20CF206B73F500F88161 /* WTMyCaseMapView.m */,
+				B1C54736207F6D3800200BAC /* WTAnnotationView.h */,
+				B1C54737207F6D3800200BAC /* WTAnnotationView.m */,
+				B1C54733207F0C9500200BAC /* WTMyCaseCalloutView.h */,
+				B1C54734207F0C9500200BAC /* WTMyCaseCalloutView.m */,
+				B180F6932085CE5C00D59296 /* WTCaseSearchCalloutView.h */,
+				B180F6942085CE5C00D59296 /* WTCaseSearchCalloutView.m */,
+				66850FA4219034A400B6E651 /* WTNavigationChooseObj.h */,
+				66850FA5219034A400B6E651 /* WTNavigationChooseObj.m */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		B1EAB0762080A391006288EB /* SignView */ = {
+			isa = PBXGroup;
+			children = (
+				669611D3207C497F00ADD098 /* WTMyCaseSignCell.h */,
+				669611D4207C497F00ADD098 /* WTMyCaseSignCell.m */,
+				66D7B4FE207C628100E370D4 /* WTCaseSignCollectionCell.h */,
+				66D7B4FF207C628100E370D4 /* WTCaseSignCollectionCell.m */,
+				6694A79420E3CC3B0080D143 /* WTCaseRelatedButton.h */,
+				6694A79520E3CC3B0080D143 /* WTCaseRelatedButton.m */,
+			);
+			path = SignView;
+			sourceTree = "<group>";
+		};
+		B1EAB0772080A391006288EB /* UserView */ = {
+			isa = PBXGroup;
+			children = (
+				B10E20D1206B73F500F88161 /* WTMyCaseUserView.h */,
+				B10E20CC206B73F500F88161 /* WTMyCaseUserView.m */,
+				B10E20D2206B73F500F88161 /* WTMyCaseUserCell.h */,
+				B10E20CE206B73F500F88161 /* WTMyCaseUserCell.m */,
+			);
+			path = UserView;
+			sourceTree = "<group>";
+		};
+		FE6174493FE44A775F0FC201 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70F07C6E8F5E41E3D736731F /* Pods-SongDa.debug.xcconfig */,
+				E9D2ACEF41755320C0860D0D /* Pods-SongDa.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1304EC72069CF92006DC9A3 /* SongDa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1304EF42069CF92006DC9A3 /* Build configuration list for PBXNativeTarget "SongDa" */;
+			buildPhases = (
+				A03687E9BA72A0357B499547 /* [CP] Check Pods Manifest.lock */,
+				B1304EC42069CF92006DC9A3 /* Sources */,
+				B1304EC52069CF92006DC9A3 /* Frameworks */,
+				B1304EC62069CF92006DC9A3 /* Resources */,
+				C678706A6F9D93E37377545B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SongDa;
+			productName = SongDa;
+			productReference = B1304EC82069CF92006DC9A3 /* SongDa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1304EDF2069CF92006DC9A3 /* SongDaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1304EF72069CF92006DC9A3 /* Build configuration list for PBXNativeTarget "SongDaTests" */;
+			buildPhases = (
+				B1304EDC2069CF92006DC9A3 /* Sources */,
+				B1304EDD2069CF92006DC9A3 /* Frameworks */,
+				B1304EDE2069CF92006DC9A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1304EE22069CF92006DC9A3 /* PBXTargetDependency */,
+			);
+			name = SongDaTests;
+			productName = SongDaTests;
+			productReference = B1304EE02069CF92006DC9A3 /* SongDaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B1304EEA2069CF92006DC9A3 /* SongDaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1304EFA2069CF92006DC9A3 /* Build configuration list for PBXNativeTarget "SongDaUITests" */;
+			buildPhases = (
+				B1304EE72069CF92006DC9A3 /* Sources */,
+				B1304EE82069CF92006DC9A3 /* Frameworks */,
+				B1304EE92069CF92006DC9A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1304EED2069CF92006DC9A3 /* PBXTargetDependency */,
+			);
+			name = SongDaUITests;
+			productName = SongDaUITests;
+			productReference = B1304EEB2069CF92006DC9A3 /* SongDaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1304EC02069CF92006DC9A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WT;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "维途";
+				TargetAttributes = {
+					B1304EC72069CF92006DC9A3 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					B1304EDF2069CF92006DC9A3 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B1304EC72069CF92006DC9A3;
+					};
+					B1304EEA2069CF92006DC9A3 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B1304EC72069CF92006DC9A3;
+					};
+				};
+			};
+			buildConfigurationList = B1304EC32069CF92006DC9A3 /* Build configuration list for PBXProject "SongDa" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1304EBF2069CF92006DC9A3;
+			productRefGroup = B1304EC92069CF92006DC9A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1304EC72069CF92006DC9A3 /* SongDa */,
+				B1304EDF2069CF92006DC9A3 /* SongDaTests */,
+				B1304EEA2069CF92006DC9A3 /* SongDaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1304EC62069CF92006DC9A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66A0EEBB216E216200C06C3E /* city.db in Resources */,
+				B1304ED52069CF92006DC9A3 /* Assets.xcassets in Resources */,
+				66B6168920AC6619007E2863 /* WTCaseCenterArrivedCell.xib in Resources */,
+				B10E20B3206B71E600F88161 /* Address.plist in Resources */,
+				B156ADD32073296900A97BD8 /* WTCaseDetailController.storyboard in Resources */,
+				B1304F4E206A193F006DC9A3 /* LaunchScreen.storyboard in Resources */,
+				B1EAB07F2080C864006288EB /* WTCaseArrivedCell.xib in Resources */,
+				B17B1A99207232E200696ADF /* WTMyCaseCell.xib in Resources */,
+				666A88102189AA1000645213 /* WTCaseCenterCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1304EDE2069CF92006DC9A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1304EE92069CF92006DC9A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A03687E9BA72A0357B499547 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SongDa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C678706A6F9D93E37377545B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SongDa/Pods-SongDa-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/AMapNavi/AMapNaviKit.framework/AMapNavi.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMapNavi.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SongDa/Pods-SongDa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1304EC42069CF92006DC9A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B156ADD62073574A00A97BD8 /* WTMyCaseModel.m in Sources */,
+				B10E20B6206B71E600F88161 /* UIImage+Image.m in Sources */,
+				669611D9207C521100ADD098 /* HYXPlaceholderTextView.m in Sources */,
+				66850FAE2190476800B6E651 /* JZLocationConverter.m in Sources */,
+				B17B1A9120720E1A00696ADF /* UILabel+HYXCategory.m in Sources */,
+				66A0EEBE216E21A100C06C3E /* WTRegionModel.m in Sources */,
+				6694A79620E3CC3B0080D143 /* WTCaseRelatedButton.m in Sources */,
+				B10E2080206B71DA00F88161 /* WTTabBar.m in Sources */,
+				660FF19E2079B19700D53444 /* WTCaseDetailModel.m in Sources */,
+				660FF1B5207A031A00D53444 /* WTCaseTransferCell.m in Sources */,
+				66850FA6219034A400B6E651 /* WTNavigationChooseObj.m in Sources */,
+				66A0EECD216F337200C06C3E /* UIView+SeperatorLine.m in Sources */,
+				660FF1AF2079E96E00D53444 /* WTCaseTransferCodeController.m in Sources */,
+				666A88132189AA1000645213 /* WTRegionPickCell.m in Sources */,
+				665178EC219176DD005AA221 /* UIView+Toast.m in Sources */,
+				B10E207F206B71DA00F88161 /* WTTabBarController.m in Sources */,
+				666A88112189AA1000645213 /* WTRegionPickHeader.m in Sources */,
+				B10E20E0206B73F500F88161 /* WTMyCaseUserCell.m in Sources */,
+				66D7B50C207CD3B000E370D4 /* WTCaseSignViewModel.m in Sources */,
+				66356EA120906ECE00EB761F /* WTCaseCenterMapController.m in Sources */,
+				66968909207DAB2500EDDE2C /* WTCaseDeliverModel.m in Sources */,
+				B193F1C0206CEA9700C47A73 /* WTMyCaseViewModel.m in Sources */,
+				B1EAB0852080D477006288EB /* WTCaseArrivedModel.m in Sources */,
+				6694A79320E3AA710080D143 /* WTCaseRelatedViewModel.m in Sources */,
+				669611D2207C469700ADD098 /* WTMyCaseSignController.m in Sources */,
+				B10E205D206B718D00F88161 /* AppDelegate.m in Sources */,
+				66A0EEC1216E24BF00C06C3E /* WTRegionManager.m in Sources */,
+				B111EB482084896B00C3656C /* WTMyCaseSearchController.m in Sources */,
+				6602F9202091C39600AB6313 /* WTMyCaseSignDetailViewModel.m in Sources */,
+				660FF1A12079BFA200D53444 /* WTCaseTransferViewModel.m in Sources */,
+				6696890F207DD5A300EDDE2C /* WTMyCaseSignModel.m in Sources */,
+				666A88122189AA1000645213 /* WTRegionPickObj.m in Sources */,
+				B1EAB0732080598F006288EB /* WTAnnotation.m in Sources */,
+				B180F68F2085949E00D59296 /* WTMyCaseNaviController.m in Sources */,
+				B1C54735207F0C9500200BAC /* WTMyCaseCalloutView.m in Sources */,
+				660FF1B8207A0A7200D53444 /* WTCaseTransferDelivererViewModel.m in Sources */,
+				B10E20E2206B73F500F88161 /* WTMyCaseListView.m in Sources */,
+				B17B1A8B2071FB4A00696ADF /* WTCaseDetailController.m in Sources */,
+				66F50B00208D7EAF00D2DBC1 /* WTMessageManager.m in Sources */,
+				6628EC19207B58E9008DE508 /* WTCaseRegionModel.m in Sources */,
+				B1304EDB2069CF92006DC9A3 /* main.m in Sources */,
+				B1EAB07E2080C864006288EB /* WTCaseArrivedCell.m in Sources */,
+				B10E207E206B71DA00F88161 /* WTNavigationController.m in Sources */,
+				B180F6922085C98000D59296 /* WTSearchAnnotation.m in Sources */,
+				66C0655020C143FC0059CBF2 /* HYXCoreFit.m in Sources */,
+				B17B1A9420721DF200696ADF /* WTCaseCenterViewModel.m in Sources */,
+				660FF1B22079E99200D53444 /* WTCaseTransferOperateController.m in Sources */,
+				66968912207DE98E00EDDE2C /* WTCaseSignImageViewModel.m in Sources */,
+				B111EB4B2084973100C3656C /* WTMyCaseSearchModel.m in Sources */,
+				6628EC16207B50E1008DE508 /* WTCaseCenterRegionsViewModel.m in Sources */,
+				B1C54738207F6D3800200BAC /* WTAnnotationView.m in Sources */,
+				B10E2063206B719F00F88161 /* WTBaseViewModel.m in Sources */,
+				66356EAD20907D1100EB761F /* WTAddressGetViewModel.m in Sources */,
+				66356EB020907E1600EB761F /* WTAddressModel.m in Sources */,
+				B1E07C8320873C8100ADEC37 /* WTMyCaseByBusController.m in Sources */,
+				66D7B503207C839500E370D4 /* WTMyCaseSignResultController.m in Sources */,
+				6602F9232091DB1F00AB6313 /* WTMyCaseSignDetailModel.m in Sources */,
+				B1EAB07A2080B6C0006288EB /* WTMyCaseArrivedController.m in Sources */,
+				66850FB221906B7800B6E651 /* ModelDate.m in Sources */,
+				B156ADD9207382B800A97BD8 /* WTTotalModel.m in Sources */,
+				66F50B03208D7EE900D2DBC1 /* WTMessageModel.m in Sources */,
+				B10E20E3206B73F500F88161 /* WTCaseCenterController.m in Sources */,
+				66B6168820AC6619007E2863 /* WTCaseCenterArrivedCell.m in Sources */,
+				B10E20EA206B7A1000F88161 /* WTAccountManager.m in Sources */,
+				666A880F2189AA1000645213 /* WTCaseCenterCell.m in Sources */,
+				66850FA32190316F00B6E651 /* WTNavigationModel.m in Sources */,
+				B1EAB0822080CBD0006288EB /* WTCaseArrivedViewModel.m in Sources */,
+				B180F69820860ED900D59296 /* WTBusRouteModel.m in Sources */,
+				66D0C20C2074B45B00E8B0CE /* WTMyCaseMessageController.m in Sources */,
+				660FF1BB207A0E3100D53444 /* WTCaseTransferDelivererModel.m in Sources */,
+				B180F68C208582B700D59296 /* WTUserTrafficController.m in Sources */,
+				B10E20F7206B9AB400F88161 /* WTLoginController.m in Sources */,
+				664C735B20E1C5AE00F28DF8 /* WTCaseDateView.m in Sources */,
+				B180F6952085CE5C00D59296 /* WTCaseSearchCalloutView.m in Sources */,
+				6628EC13207B12B9008DE508 /* WTCaseCenterModel.m in Sources */,
+				B10E20E7206B79F700F88161 /* WTHTTPSessionManager.m in Sources */,
+				B10E20DC206B73F500F88161 /* WTCaseCodeController.m in Sources */,
+				665178D5219141FD005AA221 /* UILabel+extension.m in Sources */,
+				66C0655320C146B20059CBF2 /* UIView+HYXCategory.m in Sources */,
+				B10E20E1206B73F500F88161 /* WTMyCaseMapView.m in Sources */,
+				66356EA4209075F600EB761F /* WTCaseTransferConfirmViewModel.m in Sources */,
+				B193F1BD206CDA3500C47A73 /* WTModifyPwdController.m in Sources */,
+				6628EC10207AF1A1008DE508 /* WTPlaceholderView.m in Sources */,
+				B10E20B5206B71E600F88161 /* NSString+HYXCategory.m in Sources */,
+				6662538C20BE6EE0000F2CD7 /* WTPhotoManager.m in Sources */,
+				B10E20DE206B73F500F88161 /* WTMyCaseUserView.m in Sources */,
+				669611D5207C497F00ADD098 /* WTMyCaseSignCell.m in Sources */,
+				66850FAA21903A8E00B6E651 /* KLCPopup.m in Sources */,
+				B10E2064206B719F00F88161 /* WTBaseModel.m in Sources */,
+				B10E20B9206B71E600F88161 /* UISearchBar+HYXAdd.m in Sources */,
+				B193F1AE206C81DB00C47A73 /* WTLoginViewModel.m in Sources */,
+				660FF19B2079A6B600D53444 /* WTCaseDetailViewModel.m in Sources */,
+				B17B1A98207232E200696ADF /* WTMyCaseCell.m in Sources */,
+				6688E07A20BC239B00EE6AD7 /* WTCaseConfirmFromCodeViewModel.m in Sources */,
+				66356EAA20907CFA00EB761F /* WTAddressReportViewModel.m in Sources */,
+				B193F1BA206CC76300C47A73 /* WTCacheManager.m in Sources */,
+				B10E20DD206B73F500F88161 /* WTMyCaseController.m in Sources */,
+				66D7B500207C628100E370D4 /* WTCaseSignCollectionCell.m in Sources */,
+				6696890C207DC02600EDDE2C /* WTCaseSignSituationViewModel.m in Sources */,
+				B193F1B4206C93F400C47A73 /* WTForgetPwdController.m in Sources */,
+				66D7B509207CC35400E370D4 /* WTLocationManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1304EDC2069CF92006DC9A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1304EE52069CF92006DC9A3 /* SongDaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1304EE72069CF92006DC9A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1304EF02069CF92006DC9A3 /* SongDaUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1304EE22069CF92006DC9A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1304EC72069CF92006DC9A3 /* SongDa */;
+			targetProxy = B1304EE12069CF92006DC9A3 /* PBXContainerItemProxy */;
+		};
+		B1304EED2069CF92006DC9A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1304EC72069CF92006DC9A3 /* SongDa */;
+			targetProxy = B1304EEC2069CF92006DC9A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B1304EF22069CF92006DC9A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SongDa/Classes/Config/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B1304EF32069CF92006DC9A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SongDa/Classes/Config/PrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1304EF52069CF92006DC9A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70F07C6E8F5E41E3D736731F /* Pods-SongDa.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = SongDa/SongDa.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7QS3ZL632;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SongDa/Config/PrefixHeader.pch";
+				INFOPLIST_FILE = SongDa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weitu.chengduSongdaTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B1304EF62069CF92006DC9A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9D2ACEF41755320C0860D0D /* Pods-SongDa.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = SongDa/SongDa.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7QS3ZL632;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SongDa/Config/PrefixHeader.pch";
+				INFOPLIST_FILE = SongDa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weitu.chengduSongdaTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B1304EF82069CF92006DC9A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QE66C6DK5Y;
+				INFOPLIST_FILE = SongDaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weitu.SongDaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SongDa.app/SongDa";
+			};
+			name = Debug;
+		};
+		B1304EF92069CF92006DC9A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QE66C6DK5Y;
+				INFOPLIST_FILE = SongDaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weitu.SongDaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SongDa.app/SongDa";
+			};
+			name = Release;
+		};
+		B1304EFB2069CF92006DC9A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QE66C6DK5Y;
+				INFOPLIST_FILE = SongDaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weitu.SongDaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SongDa;
+			};
+			name = Debug;
+		};
+		B1304EFC2069CF92006DC9A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QE66C6DK5Y;
+				INFOPLIST_FILE = SongDaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weitu.SongDaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SongDa;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1304EC32069CF92006DC9A3 /* Build configuration list for PBXProject "SongDa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1304EF22069CF92006DC9A3 /* Debug */,
+				B1304EF32069CF92006DC9A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1304EF42069CF92006DC9A3 /* Build configuration list for PBXNativeTarget "SongDa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1304EF52069CF92006DC9A3 /* Debug */,
+				B1304EF62069CF92006DC9A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1304EF72069CF92006DC9A3 /* Build configuration list for PBXNativeTarget "SongDaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1304EF82069CF92006DC9A3 /* Debug */,
+				B1304EF92069CF92006DC9A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1304EFA2069CF92006DC9A3 /* Build configuration list for PBXNativeTarget "SongDaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1304EFB2069CF92006DC9A3 /* Debug */,
+				B1304EFC2069CF92006DC9A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1304EC02069CF92006DC9A3 /* Project object */;
+}

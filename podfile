@@ -1,0 +1,29 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+inhibit_all_warnings!
+
+target "SongDa" do
+    pod "AFNetworking", '~> 3.1.0'
+    pod "MJRefresh"
+    pod "Masonry"
+    pod "YYKit"
+    pod "SVProgressHUD" , :git => 'https://gitee.com/fancy007/SVProgressHUD.git'
+    pod "FMDB", '~> 2.6.2'
+    pod 'CocoaLumberjack'
+    pod 'Bugly'
+#pod "YYKit" , :git => 'https://gitee.com/CKYFREE/YYKit.git'
+#pod "UMessage_NOIDFA", '~> 1.5.3'
+#pod "UMengAnalytics", '~> 4.2.4'
+    # 融云
+    #    pod "RongCloudIM/IMLib"
+    #    pod "RongCloudIM/IMKit"
+#pod "OpenUDID"
+#pod "RTRootNavigationController"
+#pod "ReactiveObjC"
+pod "AMapNavi"
+pod "AMapLocation"
+pod "AMapSearch"
+pod "JPush"
+pod 'ZLPhotoBrowser'
+end
+

@@ -1,0 +1,74 @@
+//
+//  PrefixHeader.pch
+//  SongDa
+//
+//  Created by Fancy on 2018/3/27.
+//  Copyright © 2018年 维途. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <YYKit.h>
+#import <SVProgressHUD.h>
+#import <MJRefresh.h>
+#import <Masonry.h>
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
+#import "HYXKit.h"
+#import "WTConst.h"
+#import "WTTotalModel.h"
+#import "WTCacheManager.h"
+#import "WTAccountManager.h"
+#import "WTHTTPSessionManager.h"
+#import "WTNotificationConfig.h"
+#import "WTPlaceholderView.h"
+#import "WTLocationManager.h"
+
+#define WTBlueColor   [UIColor colorWithHexString:@"0E65BD"]
+#define WTBrownColor  [UIColor colorWithHexString:@"FA8129"]
+#define WTGreenColor  [UIColor colorWithHexString:@"00A79F"]
+#define WTRedColor    [UIColor colorWithHexString:@"F80022"]
+#define WTGlobalBG    [UIColor colorWithHexString:@"F6F6F6"]
+
+#define WTWeakSelf __weak typeof(self) weakSelf = self
+
+#define WTError(code, message)  [NSError errorWithDomain:@"WTReponse" code:(code) userInfo:@{NSLocalizedDescriptionKey : (message)}]
+
+// 定义这个常量，就可以不用在开发过程中使用"mas_"前缀。
+#define MAS_SHORTHAND
+// 定义这个常量，就可以让Masonry帮我们自动把基础数据类型的数据，自动装箱为对象类型。
+#define MAS_SHORTHAND_GLOBALS
+
+//通过DEBUG模式设置全局日志等级，DEBUG时为Verbose，所有日志信息都可以打印，否则Error，只打印
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelError;
+#endif
+
+#ifdef DEBUG
+#define DLog(format, ...) DDLogError((@"[文件名:%s]" "[函数名:%s]" "[行号:%d]" format), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define DLog(...);
+#endif
+
+// iOS11 适配，解决偏移问题
+#define  adjustsScrollViewInsets(scrollView)\
+do {\
+_Pragma("clang diagnostic push")\
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"")\
+if ([scrollView respondsToSelector:NSSelectorFromString(@"setContentInsetAdjustmentBehavior:")]) {\
+NSMethodSignature *signature = [UIScrollView instanceMethodSignatureForSelector:@selector(setContentInsetAdjustmentBehavior:)];\
+NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];\
+NSInteger argument = 2;\
+invocation.target = scrollView;\
+invocation.selector = @selector(setContentInsetAdjustmentBehavior:);\
+[invocation setArgument:&argument atIndex:2];\
+[invocation retainArguments];\
+[invocation invoke];\
+}\
+_Pragma("clang diagnostic pop")\
+} while (0)
+
+#endif /* PrefixHeader_pch */

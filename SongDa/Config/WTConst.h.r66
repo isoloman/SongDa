@@ -1,0 +1,99 @@
+//
+//  WTConst.h
+//  SongDa
+//
+//  Created by Fancy on 2018/3/29.
+//  Copyright © 2018年 维途. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+/************************** 网络请求路径 **************************/
+// 基本路径
+//--------翔安地址路径-----begin-------------------------------------------------
+//测试服外网
+//#define kBaseURLString              @"http://119.23.133.182:80/entry/api"
+//测试服内网
+#define kBaseURLString                @"http://192.168.0.5:8203/entry/api"
+//#define kBaseURLString              @"http://192.168.4.23:80/entry/api"
+//正式服
+//#define kBaseURLString              @"http://e.xacourt.gov.cn:80/entry/api"
+//--------翔安地址路径-----end-------------------------------------------------
+
+//--------昆明-官渡：地址路径-----begin-------------------------------------------------
+//正式服
+//#define kBaseURLString              @"http://116.52.160.187:58091/entry/api"
+//测试服内网
+//#define kBaseURLString              @"http://192.168.0.5:8094/entry/api"
+//--------昆明-官渡：地址路径-----end-------------------------------------------------
+
+
+// 登录
+#define kLoginPath                  @"/sys/user/login"
+// 登出
+#define kLogoutPath                 @"/sys/user/logout"
+// 发送验证码
+#define kSendVerifyCodePath         @"/sys/user/send/verify/code"
+// 我的案件
+#define kMyCasePath                 @"/case/litigant/address/list/assigned"
+// 案件中心
+#define kCaseCenterPath             @"/case/list"
+// 案件详情
+#define kCaseDetailPath             @"/case/detail"
+// 送达员列表
+#define kCaseDelivererPath          @"/sys/user/list/all"
+// 移交案件
+#define kCaseTransferPath           @"/case/litigant/address/assign/transfer"
+// 案件移交确认
+#define kCaseTransferConfirmPath    @"/case/litigant/address/assign/transfer/confirm"
+// 扫码移交案件确认接收
+#define kCaseConfirmFromCodePath    @"/case/litigant/address/assign/scan/transfer"
+// 行政市的区
+#define kCaseRegionsPath            @"/case/litigant/address/regions"
+// 案件上门追记
+#define kCaseSignPath               @"/visit/add"
+// 案件上门追记详情
+#define kCaseSignDetailPath         @"/visit/detail"
+// 案件关联列表
+#define kCaseRelatedPath            @"/visit/visitrecordlist/by/groupid"
+// 案件上门情况
+#define kCaseSignSituationPath      @"/visit/visitdetail"
+// 案件追记图片上传
+#define kCaseSignImagesPath         @"/visit/addfiles"
+// 案件已送达
+#define kCaseArrivedPath            @"/case/litigant/address/list/arrived"
+// 报告当前位置
+#define kUserAddrReportPath         @"/sys/user/location/report"
+// 获取当前位置
+#define kUserAddrGetPath            @"/sys/user/location/get"
+
+
+/************************** 网络请求错误类型 **************************/
+#define kRequestErrorTypeNoNet      @"网络连接异常，请检查网络~"
+#define kRequestErrorTypeNoData     @"暂无数据，下拉刷新试试~"
+#define kRequestErrorTypeError      @"访问出错了~"
+#define kRequestErrorCodeFormat     1000    //数据格式出错
+#define kRequestErrorCodeNoNet      900     //无网络
+#define kRequestErrorCodeServer     500     //服务器出错
+#define kRequestErrorCodeNoData     405     //暂无数据
+
+/** 上次登录时间key */
+#define kLastLoginTimeKey           @"lastLoginTime"
+
+/************************** 验证码类型 **************************/
+/** 验证码类型--登录 */
+#define kVerifyTypeLogin            @"LOGIN"
+/** 验证码类型--忘记密码 */
+#define kVerifyTypeForget           @""
+/** 验证码类型--修改密码 */
+#define kVerifyTypeModify           @""
+
+/************************** 搜索框 **************************/
+/** 搜索框上间距(为了修正iOS11高度) */
+#define kSearchTopMagin             8.0
+#define kSearchTextFont             13.0
+
+
+/************************** 其他配置 **************************/
+// 未读消息
+#define kUnreadMsgCountKey          @"kUnreadMsgCountKey"

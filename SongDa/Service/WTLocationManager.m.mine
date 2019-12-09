@@ -1,0 +1,164 @@
+//
+//  WTLocationManager.m
+//  SongDa
+//
+//  Created by 灰太狼 on 2018/4/10.
+//  Copyright © 2018年 维途. All rights reserved.
+//
+
+#import "WTLocationManager.h"
+#import "WTAddressReportViewModel.h"
+
+@interface WTLocationManager () <AMapLocationManagerDelegate>
+@property (strong, nonatomic) WTAddressReportViewModel *viewModel;
+@end
+
+@implementation WTLocationManager
+
+// GCD定时器
+static dispatch_source_t _timer;
+
+- (WTAddressReportViewModel *)viewModel
+{
+    if (_viewModel == nil) {
+        _viewModel = [[WTAddressReportViewModel alloc] init];
+    }
+    return _viewModel;
+}
+
++ (instancetype)shareInstance {
+    static WTLocationManager *_instace = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _instace = [[self alloc] init];
+    });
+    return _instace;
+}
+
+- (instancetype)init {
+    if (self = [super init]) {
+        self.locationManager = [[AMapLocationManager alloc] init];
+        self.locationManager.delegate = self;
+        
+        if ([WTAccountManager sharedManager].isLogined) {
+            [self startGCDTimer];
+        }
+    }
+    return self;
+}
+
+#pragma mark - <消息请求定时器>
+- (void)startGCDTimer
+{
+    [self stopTimer];
+    NSTimeInterval period = 3*60.0; //设置时间间隔
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+    dispatch_source_set_timer(_timer, dispatch_walltime(NULL, 0), period * NSEC_PER_SEC, 0); //每秒执行
+    // 事件回调
+    dispatch_source_set_event_handler(_timer, ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self start];
+//            [self startGCDTimer];
+        });
+    });
+    
+    // 开启定时器
+    dispatch_resume(_timer);
+}
+
+-(void)stopTimer{
+    if(_timer){
+        dispatch_source_cancel(_timer);
+        _timer = nil;
+    }
+}
+
+- (void)start {
+    [self.locationManager setLocatingWithReGeocode:YES];
+    [self.locationManager startUpdatingLocation];
+}
+
+- (void)reportCurrentAddress {
+    WTWeakSelf;
+    [self.locationManager requestLocationWithReGeocode:YES completionBlock:^(CLLocation *location, AMapLocationReGeocode *regeocode, NSError *error) {
+        if (regeocode) {
+            self.currentCity = regeocode.city;
+            self.currentProvince = regeocode.province;
+            self.currentAdress = regeocode.formattedAddress;
+            NSString *address = [NSString stringWithFormat:@"%@%@%@%@",regeocode.city,regeocode.district,regeocode.street,regeocode.number];
+            NSMutableDictionary *paras = [NSMutableDictionary dictionary];
+            paras[@"lng"] = @(weakSelf.longitude);
+            paras[@"lat"] = @(weakSelf.latitude);
+            paras[@"address"] = address;
+            paras[@"userId"] = [WTAccountManager sharedManager].userId;
+            [weakSelf.viewModel dataByParameters:paras success:^(id obj) {
+                HYXLog(@"成功报告当前地址！");
+            } failure:^(NSError *error, NSString *message) {
+                HYXLog(@"报告当前地址失败！");
+            }];
+        }
+    }];
+}
+
++ (void)requestLocationCompletionBlock:(AMapLocatingCompletionBlock)completionBlock{
+  
+    [[WTLocationManager shareInstance].locationManager requestLocationWithReGeocode:YES completionBlock:^(CLLocation *location, AMapLocationReGeocode *regeocode, NSError *error) {
+        if (regeocode) {
+            [WTLocationManager shareInstance].currentCity = regeocode.city;
+            [WTLocationManager shareInstance].currentProvince = regeocode.province;
+            if (completionBlock) {
+                completionBlock(location,regeocode,error);
+            }
+        }
+    }];
+
+}
+
+- (CGFloat)longitude {
+
+    return _longitude;
+}
+
+#pragma mark - <AMapLocationManagerDelegate>
+- (void)amapLocationManager:(AMapLocationManager *)manager didUpdateLocation:(CLLocation *)location reGeocode:(AMapLocationReGeocode *)reGeocode{
+    CLLocationCoordinate2D coordinate2D = location.coordinate;
+    
+//    //1.将两个经纬度点转成投影点
+//    MAMapPoint lastPosition = MAMapPointForCoordinate(CLLocationCoordinate2DMake(_latitude,_longitude));
+//
+//    MAMapPoint newPosition = MAMapPointForCoordinate(CLLocationCoordinate2DMake(coordinate2D.latitude,coordinate2D.longitude));
+//    //2.计算距离
+//    CLLocationDistance distance = MAMetersBetweenMapPoints(lastPosition,newPosition);
+    
+    self.longitude = coordinate2D.longitude;
+    self.latitude = coordinate2D.latitude;
+    HYXLog(@"经度 %f  纬度 %f", self.longitude,self.latitude);
+    
+    if (reGeocode) {
+        HYXLog(@"%@", reGeocode);
+        self.currentCity = reGeocode.city;
+        self.currentProvince = reGeocode.province;
+        self.currentAdress = reGeocode.formattedAddress;
+        [manager stopUpdatingLocation];
+        
+        if ([WTAccountManager sharedManager].isLogined) {
+            NSString *address = [NSString stringWithFormat:@"%@%@%@%@",reGeocode.city,reGeocode.district,reGeocode.street,reGeocode.number];
+            
+            NSMutableDictionary *paras = [NSMutableDictionary dictionary];
+            paras[@"lng"] = @(self.longitude);
+            paras[@"lat"] = @(self.latitude);
+            paras[@"address"] = address;
+            paras[@"userName"] = [WTAccountManager sharedManager].userName;
+            paras[@"userId"] = [WTAccountManager sharedManager].userId;
+            [self.viewModel dataByParameters:paras success:^(id obj) {
+                HYXLog(@"成功报告当前地址！");
+            } failure:^(NSError *error, NSString *message) {
+                HYXLog(@"报告当前地址失败！");
+            }];
+        }
+        
+    }
+}
+
+@end
