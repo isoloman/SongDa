@@ -78,6 +78,9 @@ static BOOL isVerify = NO;//是否需要验证码
 #elif MianYang
     logoImgView.image = HYXImage(@"MianYangLaunchLogo");
     [logoImgView sizeToFit];
+#elif QiQiHaEr
+    logoImgView.image = HYXImage(@"QiQiHaErLaunchLogo");
+    [logoImgView sizeToFit];
 #endif
     
     // 标题
@@ -88,6 +91,8 @@ static BOOL isVerify = NO;//是否需要验证码
     titleLabel.text = @"渝博公证司法辅助平台";
 #elif MianYang
     titleLabel.text = @"法湛绵州司法辅助平台";
+#elif QiQiHaEr
+    titleLabel.text = @"齐齐哈尔鹤城公证处";
 #endif
     titleLabel.textColor = [UIColor whiteColor];
     titleLabel.font = [UIFont systemFontOfSize:16];

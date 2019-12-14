@@ -39,6 +39,8 @@
 #define kBaseURLString                @"http://222.180.25.131:18080/entry/api"
 #elif MianYang==1
 #define kBaseURLString                @"http://121.41.30.53:9081/entry/api"
+#elif QiQiHaEr==1
+#define kBaseURLString                @"http://221.209.32.250:58720/entry/api"
 #endif
 //测试服内网
 //#define kBaseURLString                  @"http://47.103.60.210:8103/entry/api"

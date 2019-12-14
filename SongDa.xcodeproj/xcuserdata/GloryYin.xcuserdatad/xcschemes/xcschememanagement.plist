@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>QiQiHaEr.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>SongDa.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -22,6 +27,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0C0881B023A51E29000AA376</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0C8B37C823059475003F84E2</key>
 		<dict>
 			<key>primary</key>

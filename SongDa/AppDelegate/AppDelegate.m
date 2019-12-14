@@ -41,6 +41,13 @@
 #define AMapKey         @"115f22c77212de58909e606c701b7e68"
 #define TestMapKey      @"991c121432ebdec99f605c914198c516"
 #define BUGLY_APP_ID    @"93b3dce5fa"
+
+#elif QiQiHaEr
+
+#define JPushAppKey     @"a6b8302b4441c31c8c7d5212"
+#define AMapKey         @"703ccfdda33f90f831cae036bbf1a02d"
+#define TestMapKey      @"991c121432ebdec99f605c914198c516"
+#define BUGLY_APP_ID    @"93b3dce5fa"
 #endif
 
 @interface AppDelegate () <JPUSHRegisterDelegate,BuglyDelegate>
